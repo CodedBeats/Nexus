@@ -27,6 +27,8 @@ li {
 }
 
 .navbar a {
+    font-size: 1.5em;
+    font-weight: bold;
     text-decoration: none;
     color: #333;
     padding: 5px 10px;
