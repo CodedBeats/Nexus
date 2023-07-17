@@ -1,0 +1,18 @@
+body {
+    margin: auto;
+  }
+  
+  .box {
+    margin: auto;
+    width: 98vw;
+    height: 98vh;
+    background-color: black;
+    padding: 5px;
+  }
+  
+  .screen {
+    margin: auto;
+    background: gold;
+    width: 70%;
+    height: 65%;
+  }
