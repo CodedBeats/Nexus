@@ -2,10 +2,10 @@
     margin: 0;
   }
   .header {
-
     background-color: #f1f1f1;
-    padding: 20px 20px 0px;
+    padding: 20px;
     display: grid;
+    top: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "left middle right";
     justify-content: center;
@@ -13,6 +13,12 @@
   }
   .left-container{
     grid-area: left;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbarIcon{
+    grid-area: left;
+    display: flex;
 
   }
   .middle-container{
@@ -71,23 +77,7 @@
     }
 
   }
-  .link-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1%;
-  }
-  .homelink, .aboutlink, .whatsNewlink, .gamelink{
-    display: flex;
-    background-color: lightgrey;
-    border: 1px solid #333;
-    border-radius: 20px;
-    padding: 5px;
-  }
-  .homelink a, .aboutlink a, .whatsNewlink a, .gamelink a {
-    text-decoration: none;
-    color: #333;
-  }
+  
   .right-container{
     grid-area: right;
     display: flex;
