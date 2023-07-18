@@ -8,16 +8,22 @@ body {
   .header {
     background-color: #f1f1f1;
     padding: 20px 20px 0px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left middle right";
     justify-content: center;
     align-items: center;
-    flex-direction: column;
   }
-  
+  .left-container{
+    grid-area: left;
+
+  }
+  .middle-container{
+    grid-area: middle;
+    justify-content: center;
+  }
   .search-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .search-form {
@@ -72,7 +78,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 40vw;
     margin: 1%;
   }
   .homelink, .aboutlink, .whatsNewlink, .gamelink{
@@ -80,9 +85,21 @@ body {
     background-color: lightgrey;
     border: 1px solid #333;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
   }
   .homelink a, .aboutlink a, .whatsNewlink a, .gamelink a {
     text-decoration: none;
     color: #333;
+  }
+  .right-container{
+    grid-area: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .profile{
+    grid-area: right;
+    display: flex;
+    border-radius: 50%;
+    background-color: red;
+
   }
