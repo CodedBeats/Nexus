@@ -1,0 +1,102 @@
+  .body{
+    margin: 0;
+  }
+  .header {
+
+    background-color: #f1f1f1;
+    padding: 20px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left middle right";
+    justify-content: center;
+    align-items: center;
+  }
+  .left-container{
+    grid-area: left;
+
+  }
+  .middle-container{
+    grid-area: middle;
+    justify-content: center;
+  }
+  .search-container {
+    display: flex;
+  }
+  
+  .search-form {
+    display: flex;
+    border: 2px solid lightgrey;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: none;
+    width: 30vw;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: darkgrey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 0.25s;
+    background-color: grey;
+    animation: hoverCycle 5s infinite;
+  }
+  @keyframes hoverCycle {
+    0% {
+      color: red;
+    }
+    16.6% {
+      color: orange;
+    }
+    33.3% {
+      color: yellow;
+    }
+    50% {
+      color: green;
+    }
+    66.6% {
+      color: blue;
+    }
+    83.3%{
+        color: indigo;
+    }
+    100%{
+        color: violet;
+    }
+
+  }
+  .link-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1%;
+  }
+  .homelink, .aboutlink, .whatsNewlink, .gamelink{
+    display: flex;
+    background-color: lightgrey;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .homelink a, .aboutlink a, .whatsNewlink a, .gamelink a {
+    text-decoration: none;
+    color: #333;
+  }
+  .right-container{
+    grid-area: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .profile{
+    grid-area: right;
+    display: flex;
+    border-radius: 50%;
+    background-color: red;
+
+  }

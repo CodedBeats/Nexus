@@ -1,0 +1,14 @@
+  .box {
+    margin: auto;
+    width: 98vw;
+    height: 98vh;
+    background-color: black;
+    padding: 5px;
+  }
+  
+  .game {
+    margin: auto;
+    background: gold;
+    width: 70%;
+    height: 65%;
+  }
