@@ -1,7 +1,4 @@
-  .body{
-    margin: 0;
-  }
-  .header {
+.header {
     background-color: #f1f1f1;
     padding: 20px;
     display: grid;
@@ -10,82 +7,79 @@
     grid-template-areas: "left middle right";
     justify-content: center;
     align-items: center;
-  }
-  .left-container{
+}
+.left-container {
     grid-area: left;
     display: flex;
     justify-content: flex-start;
-  }
-  .navbarIcon{
+}
+.navbarIcon {
     grid-area: left;
     display: flex;
-
-  }
-  .middle-container{
+}
+.middle-container {
     grid-area: middle;
     justify-content: center;
-  }
-  .search-container {
+}
+.search-container {
     display: flex;
-  }
-  
-  .search-form {
+}
+
+.search-form {
     display: flex;
     border: 2px solid lightgrey;
-  }
-  
-  .search-input {
+}
+
+.search-input {
     padding: 10px;
     border: none;
     width: 30vw;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     background-color: darkgrey;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+}
 
-  button:hover {
+button:hover {
     transition: 0.25s;
     background-color: grey;
     animation: hoverCycle 5s infinite;
-  }
-  @keyframes hoverCycle {
+}
+@keyframes hoverCycle {
     0% {
-      color: red;
+        color: red;
     }
     16.6% {
-      color: orange;
+        color: orange;
     }
     33.3% {
-      color: yellow;
+        color: yellow;
     }
     50% {
-      color: green;
+        color: green;
     }
     66.6% {
-      color: blue;
+        color: blue;
     }
-    83.3%{
+    83.3% {
         color: indigo;
     }
-    100%{
+    100% {
         color: violet;
     }
-
-  }
-  .right-container{
+}
+.right-container {
     grid-area: right;
     display: flex;
     justify-content: flex-end;
-  }
-  .profile{
+}
+.profile {
     grid-area: right;
     display: flex;
     border-radius: 50%;
     background-color: red;
-
-  }
+}

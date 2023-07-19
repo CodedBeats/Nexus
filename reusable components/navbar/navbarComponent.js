@@ -1,6 +1,6 @@
 // ===== Navbar component ===== //
 let createNavbarComponent = () => {
-    let componentHTML = `
+    let navbarComponentHTML = `
     <div id="dom-side-nav" class="side-nav">
         <button onclick="toggleNav()" type="button" id="open-nav-btn">Nav >></button>
         <div class="nav-menu">
@@ -29,7 +29,7 @@ let createNavbarComponent = () => {
     </div>
     `;
 
-    return componentHTML;
+    return navbarComponentHTML;
 }
 
 
@@ -55,14 +55,14 @@ let toggleNav = () => {
         
         // phone view adjustments 
         if (window.screen.width <= 800) {
-            console.log(sideNav)
-            setTimeout(() => { sideNav.style.width = "100vw"}, 0);
+            // console.log(sideNav)
+            sideNav.style.width = "100vw"
             document.body.style.height = "100%"
             document.body.style.marginLeft = "100%"
         } 
         // desktop view adjustments
         else {
-            setTimeout(() => { sideNav.style.width = "15vw" }, 0);
+            sideNav.style.width = "15vw" 
             document.body.style.marginLeft = "15vw"
             document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
         }
@@ -77,13 +77,11 @@ let toggleNav = () => {
         sideNav.style.width = "7vw";
         document.body.style.marginLeft = "7vw";
         document.body.style.backgroundColor = "white";
-        setTimeout(() => { 
-        }, 500);
     }
 }
 
 
 
 // ===== Load Navbar ===== //
-const componentHTML = createNavbarComponent();
-document.getElementById("navbar-container").innerHTML = componentHTML;
+const navbarComponentHTML = createNavbarComponent();
+document.getElementById("navbar-container").innerHTML = navbarComponentHTML;
