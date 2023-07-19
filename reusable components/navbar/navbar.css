@@ -1,7 +1,7 @@
 /* ===== nav ===== */
 body {
     margin: 0;
-    /* margin-left: 7vw !important; */
+    margin-left: 7vw;
 }
 .navbar {
     z-index: 1;
