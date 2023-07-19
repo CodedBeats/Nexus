@@ -36,7 +36,7 @@
     width: 30vw;
 }
 
-button {
+.search-form button {
     padding: 10px 20px;
     background-color: darkgrey;
     color: #fff;
@@ -44,7 +44,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.search-form button:hover {
     transition: 0.25s;
     background-color: grey;
     animation: hoverCycle 5s infinite;
@@ -81,5 +81,4 @@ button:hover {
     grid-area: right;
     display: flex;
     border-radius: 50%;
-    background-color: red;
 }
