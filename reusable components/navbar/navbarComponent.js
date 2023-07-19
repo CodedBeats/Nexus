@@ -5,14 +5,16 @@ let createNavbarComponent = () => {
         <button onclick="toggleNav()" type="button" id="open-nav-btn">Nav >></button>
         <div class="nav-menu">
             <div id="open-nav-menu" style="display:none;">
-                <a href="#">Home</a>
-                <a href="#">Games</a>
-                <a href="#">Link</a>
+                <a href="../homepage.html">Home</a>
+                <a href="../game page/gamespage.html">Games</a>
+                <a href="../aboutpage.html">About</a>
+                <a href="../reusable components/example.html">Tests</a>
             </div>
             <div id="collapsed-nav-menu">
-                <a href="#">icon</a>
-                <a href="#">icon</a>
-                <a href="#">icon</a>
+                <a href="../homepage.html">icon</a>
+                <a href="../game page/gamespage.html">icon</a>
+                <a href="../aboutpage.html">icon</a>
+                <a href="../reusable components/example.html">icon</a>
             </div>
         </div>
         <div class="nav-categories">
