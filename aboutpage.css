@@ -1,0 +1,10 @@
+.body{
+    margin: 0;
+}
+
+.box {
+    width: 100%;
+    height: 98vh;
+    background-color: black;
+    padding: 20px 0px 0px 0px;
+}
