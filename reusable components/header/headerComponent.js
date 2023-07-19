@@ -3,7 +3,7 @@ let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
         <div class="left-container">
-            <div class="navbarIcon"><i class="fa fa-bars fa-3x"></i></div>
+            <div id="navbarToggleIcon" class="navbarIcon"><button onclick="toggleNav()" type="button"><i class="fa fa-bars fa-3x"></i></button></div>
         </div>
         <div class="middle-container">
             <div class="search-container">
