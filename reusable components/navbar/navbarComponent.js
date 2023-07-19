@@ -2,7 +2,6 @@
 let createNavbarComponent = () => {
     let navbarComponentHTML = `
     <div id="dom-side-nav" class="side-nav">
-        <button onclick="toggleNav()" type="button" id="open-nav-btn">Nav >></button>
         <div class="nav-menu">
             <div id="open-nav-menu" style="display:none;">
                 <a href="../homepage.html">Home</a>
@@ -40,7 +39,7 @@ let createNavbarComponent = () => {
 let toggleNav = () => {
     // elements
     const sideNav = document.getElementById("dom-side-nav")
-    const toggleNavBtn = document.getElementById("open-nav-btn")
+    const toggleNavBtn = document.getElementById("navbarToggleIcon")
     // store in arr and foreach
     const openMenu = document.getElementById("open-nav-menu")
     const collapsedMenu = document.getElementById("collapsed-nav-menu")
@@ -48,7 +47,7 @@ let toggleNav = () => {
     const collapsedCategories = document.getElementById("collapsed-nav-categories")
 
     if (openMenu.style.display === "none") {
-        toggleNavBtn.innerHTML = "Nav <<"
+        // toggleNavBtn.innerHTML = "Nav <<"
 
         openMenu.style.display = "block"
         collapsedMenu.style.display = "none"
@@ -69,7 +68,7 @@ let toggleNav = () => {
             document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
         }
     } else {
-        toggleNavBtn.innerHTML = "Nav >>"
+        // toggleNavBtn.innerHTML = "Nav >>"
 
         openMenu.style.display = "none"
         collapsedMenu.style.display = "block"
