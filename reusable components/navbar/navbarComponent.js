@@ -11,10 +11,10 @@ let createNavbarComponent = () => {
                 <a href="../reusable components/example.html">Tests</a>
             </div>
             <div id="collapsed-nav-menu">
-                <a href="../homepage.html">icon</a>
-                <a href="../game page/gamespage.html">icon</a>
-                <a href="../aboutpage.html">icon</a>
-                <a href="../reusable components/example.html">icon</a>
+                <a href="../homepage.html">Home</a>
+                <a href="../game page/gamespage.html">Games</a>
+                <a href="../aboutpage.html">About</a>
+                <a href="../reusable components/example.html">Tests</a>
             </div>
         </div>
         <div class="nav-categories">
