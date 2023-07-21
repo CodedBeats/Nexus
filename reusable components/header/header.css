@@ -42,10 +42,10 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: 0.25s;
 }
 
 .search-form button:hover {
-    transition: 0.25s;
     background-color: grey;
     animation: hoverCycle 5s infinite;
 }

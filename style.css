@@ -33,6 +33,7 @@
     height: 80%;
     margin: 1%;
     background-color: palegoldenrod;
+    transition: 250ms;
 }
 .list-item h1{
     align-items: flex-start;
@@ -41,7 +42,6 @@
     align-self: flex-start;
 }
 .list-item:hover{
-    transition: 250ms;
     background-color: aqua;
 }
 /* Style the footer */
