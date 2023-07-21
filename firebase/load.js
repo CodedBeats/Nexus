@@ -9,3 +9,4 @@ let getDB = () => {
 
 document.getElementById('btn1').addEventListener('click', getDB)
 document.getElementById('btn2').addEventListener('click', updatePop)
+
