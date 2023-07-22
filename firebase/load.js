@@ -1,5 +1,5 @@
 import { getPop, db } from "./firebaseConfig.js"
-import { updatePop } from "./update.js"
+import { updateDocument } from "./update.js"
 
 let getDB = () => {
     console.log("loading DB")
@@ -8,5 +8,5 @@ let getDB = () => {
 
 
 document.getElementById('btn1').addEventListener('click', getDB)
-document.getElementById('btn2').addEventListener('click', updatePop)
+document.getElementById('btn2').addEventListener('click', updateDocument)
 
