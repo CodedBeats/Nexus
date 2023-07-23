@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Firebase configuration
@@ -14,6 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app)
 const db = getFirestore(app);
 
 // Get a list of documents from a collection in database
@@ -27,5 +29,5 @@ async function getPop(db) {
 
 
 
-export { getPop, db }
+export { getPop, db, auth }
 
