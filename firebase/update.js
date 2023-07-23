@@ -1,7 +1,7 @@
 import { doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"
 import { db } from "./firebaseConfig.js"
 
-// Function to update a document's value in Firestore
+
 async function updateDocument() {
     // change these to params maybe
     const collectionName = "popularity";
