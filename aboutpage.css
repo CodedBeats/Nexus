@@ -1,18 +1,18 @@
-.box {
+.about-box {
     width: 100%;
     background-color: #031030;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.box h2{
+.about-box h2{
     text-align: center;
     color: #e2eafd ;
 }
-.box h3{
+.about-box h3{
     color: #e2eafd ;
 }
-.box p{
+.about-box p{
     color: #e2eafd ;
 }
 .creator-container{
@@ -42,6 +42,8 @@
 }
 .image img{
     border-radius: 50%;
+    width: 160px;
+    height: 160px;
 }
 .information{
     margin: 1%;
@@ -78,5 +80,72 @@
     border-radius: 0%;
 }
 .about-container{
+    width: 99%;
+    min-height: 26.6vh;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+.about-container a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    min-height: 40vh;
+}
+.git-link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: 40vh;
+    border-radius: 25px;
+    background-color: #270434;
+    background-image: url(/images/GitHub-logo.png);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 250ms;
+}
+.git-link:hover{
+    background-color: #360ec8;
+    text-decoration: underline gold;
+}
+.git-link p{
+    display: flex;
+    text-align: left;
+    margin: auto;
+}
 
+.our-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: 40vh;
+    border-radius: 25px;
+    background-color: #270434;
+    transition: 250ms;
+}
+.our-team:hover{
+    background-color: #360ec8;
+    text-decoration: underline gold;
+}
+.customer-support{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: 40vh;
+    border-radius: 25px;
+    background-color: #270434;
+    transition: 250ms;
+}
+.customer-support:hover{
+    background-color: #360ec8;
+    text-decoration: underline gold;
 }
