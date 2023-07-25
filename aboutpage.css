@@ -12,6 +12,7 @@
 .about-container{
     width: 99%;
     min-height: 80vh;
+    border-radius: 5%;
     background-color: azure;
     display: flex;
     justify-content: space-between;
@@ -25,6 +26,7 @@
     margin: 1%;
 }
 .image{
+    align-self: center;
     margin: 1%;
 }
 .image img{
@@ -33,12 +35,6 @@
 .information{
     margin: 1%;
     width: 50%;
-}
-.information h3{
-
-}
-.information p{
-
 }
 .social-links{
     display: flex;
@@ -54,13 +50,19 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 1 2 3 4 5 6;
 }
-.image-grid img{
+
+.links{
     width: 100%;
     height: auto;
     grid-area: auto;
     border-radius: 50%;
 }
-.image-grid img:last-of-type{
+.linksLast{
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+}
+.image-grid a:last-of-type{
     width: 200%;
     height: auto;
     border-radius: 0%;
