@@ -16,9 +16,22 @@
     color: #e2eafd ;
 }
 .nexus-container{
-    width: 99%;
+    width: 100%;
     min-height: 100vh;
-    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.nexus-box{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    border-radius: 25px;
+    margin: 1%;
+    background-color: #b115ef;
+}
+.nexus-box h3{
+    margin: auto;
 }
 .creator-container{
     width: 99%;
