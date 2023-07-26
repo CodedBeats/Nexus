@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage Example</title>
+    <link rel="stylesheet" href="./firebaseStyles.css">
+    <link rel="stylesheet" type="text/css" href="../reusable components/navbar/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../reusable components/header/header.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="./load.js"></script>
+    <script type="module" src="./firebaseConfig.js"></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div id="header-container"></div>
+
+    <h1>Firebase Tests</h1>
+    <input class="test-input" type="text" id="inputField" placeholder="Enter something...">
+    <button class="crud-btn" id="btn1">create doc</button>
+    <button class="crud-btn" id="btn2">read doc</button>
+    <button class="crud-btn" id="btn3">update popularity</button>
+    <button class="crud-btn" id="btn4">delete doc</button>
+
+    <p id="user-name">Name: </p>
+    <p id="user-email">Email: </p>
+
+
+    <script src="../reusable components/navbar/navbarComponent.js"></script>
+    <script src="../reusable components/header/headerComponent.js"></script>
+</body>
+</html>
