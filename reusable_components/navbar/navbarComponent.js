@@ -5,13 +5,13 @@ let createNavbarComponent = () => {
         <div class="nav-menu">
             <div id="open-nav-menu" style="display:none;">
                 <a href="../homepage.html">Home</a>
-                <a href="../game page/gamespage.html">Games</a>
+                <a href="../game_page/gamespage.html">Games</a>
                 <a href="../aboutpage.html">About</a>
-                <a href="../reusable components/example.html">Tests</a>
+                <a href="../firebase/firebase.html">Tests</a>
             </div>
             <div id="collapsed-nav-menu">
                 <a href="../homepage.html">Home</a>
-                <a href="../game page/gamespage.html">Games</a>
+                <a href="../game_page/gamespage.html">Games</a>
                 <a href="../aboutpage.html">About</a>
                 <a href="../firebase/firebase.html">Tests</a>
             </div>
