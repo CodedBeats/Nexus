@@ -15,6 +15,11 @@
 .about-box p{
     color: #e2eafd ;
 }
+.nexus-container{
+    width: 99%;
+    min-height: 100vh;
+    
+}
 .creator-container{
     width: 99%;
     min-height: 26.6vh;
