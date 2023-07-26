@@ -25,7 +25,7 @@ document.getElementById("btn3").addEventListener("click", updateDocument);
 // delete doc
 document.getElementById("btn4").addEventListener("click", () => {
     const collectionName = "popularity";
-    const docId = "doc34";
+    const docId = "doc9";
 
     deleteDocument(collectionName, docId);
 });
