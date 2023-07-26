@@ -1,0 +1,65 @@
+.btn-group button {
+    background-color: black; 
+    border: 1px solid white; 
+    color: white;
+    font-size: 20px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+}
+  
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #222222;
+}
+
+.user-box {
+    width: 50vw;
+    min-height: 60vh;
+    color: transparent;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 5px;
+    color: black;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+}
+
+.user-box button {
+    background-color: #202020; 
+    border: 1px solid white; 
+    color: white;
+    font-size: 13px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: center; 
+}
+
+.divided-user-box {
+    width: 33%;
+    min-height: 60vh;
+    border-right: 2px solid black;
+    padding: 0px 20px 0px 0px;
+    text-align: center;
+}
+
+.pro-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: groove;
+    margin-left: auto;
+    margin-right: auto;
+}
