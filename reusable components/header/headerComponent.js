@@ -21,7 +21,7 @@ let createHeaderComponent = () => {
         </div>
         <div class="right-container">
             <div class="profile">
-                <a href=""><i class="fa fa-user-circle-o fa-3x"></i></a>
+                <a href="../user_page/userpage-profile.html"><i class="fa fa-user-circle-o fa-3x"></i></a>
             </div>
         </div>
     </div>
