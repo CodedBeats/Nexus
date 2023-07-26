@@ -25,6 +25,31 @@
             <div class="divided-user-box">
                 <img class="pro-pic" src="images/profile_pic.png" alt="Profile picture">
                 <button>Change Profile Picture</button>
+                <button style="background-color: darkred">Remove</button>
+            </div>
+            <div class="divided-user-box2">
+                <form action="/action_page.php">
+                    <label for="dname">Display Name</label>
+                    <input type="text" id="dname" name="displayname" placeholder="Your display name.."><br/>
+                
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Your email address.."><br/>
+                
+                    <label for="state">States and Territories</label>
+                    <select id="state" name="state">
+                      <option value="nsw">New South Wales</option>
+                      <option value="vic">Victoria</option>
+                      <option value="qld">Queensland</option>
+                      <option value="wa">Western Australia</option>
+                      <option value="sa">South Australia</option>
+                      <option value="tas">Tasmania</option>
+                      <option value="act">Australian Capital Territory</option>
+                      <option value="nt">Northern Territory</option>
+                      <option value="oth">Others</option>
+                    </select><br/>
+                  
+                    <input type="submit" value="Submit">
+                </form>
             </div>
 
         </div>
