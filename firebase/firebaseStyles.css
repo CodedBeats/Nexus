@@ -8,14 +8,14 @@ h1 {
     color: #4285F4;
 }
 
-input {
+.test-input {
     padding: 8px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
+.crud-btn {
     padding: 10px 20px;
     margin: 5px;
     background-color: #4285F4;
@@ -25,7 +25,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.crud-btn:hover {
     background-color: #3367D6;
 
 }

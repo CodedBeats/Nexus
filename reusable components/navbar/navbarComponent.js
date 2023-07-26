@@ -13,7 +13,7 @@ let createNavbarComponent = () => {
                 <a href="../homepage.html">Home</a>
                 <a href="../game page/gamespage.html">Games</a>
                 <a href="../aboutpage.html">About</a>
-                <a href="../reusable components/example.html">Tests</a>
+                <a href="../firebase/firebase.html">Tests</a>
             </div>
         </div>
         <div class="nav-categories">
