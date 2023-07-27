@@ -1,6 +1,6 @@
 // deleteDocument.js
 import { doc, deleteDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-import { db } from "../firebaseConfig.js";
+import { db } from "../misc/firebaseConfig.js";
 
 async function deleteDocument(collectionName, docID) {
     const docRef = doc(db, collectionName, docID);

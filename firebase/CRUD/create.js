@@ -1,6 +1,6 @@
 import { collection, doc, setDoc, } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-import { db } from "../firebaseConfig.js";
-import { getTotalDocuments } from "../misc.js";
+import { db } from "../misc/firebaseConfig.js";
+import { getTotalDocuments } from "../misc/misc.js";
 
 async function createDocument(collectionName, newDocumentData) {
     const collectionRef = collection(db, collectionName);
