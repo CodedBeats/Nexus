@@ -1,9 +1,6 @@
 // signUp.js
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
-import {
-    setDoc,
-    doc,
-} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { setDoc, doc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { auth, db } from "../misc/firebaseConfig.js";
 
 // Function to handle user sign-up
