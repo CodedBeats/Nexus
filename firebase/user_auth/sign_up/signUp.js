@@ -1,10 +1,10 @@
 // signUp.js
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 import { setDoc, doc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-import { auth, db } from "../misc/firebaseConfig.js";
+import { auth, db } from "../../misc/firebaseConfig.js";
 
 // Function to handle user sign-up
-async function signUp(email, password, accountName, nickname) {
+async function signUp(email, password, accountName) {
     try {
         // Create a new user using Firebase Authentication
         const userCredential = await createUserWithEmailAndPassword(
@@ -20,12 +20,11 @@ async function signUp(email, password, accountName, nickname) {
             email: user.email,
             password: password,
             accountName: accountName,
-            nickname: nickname,
         };
         await setDoc(userRef, userData);
 
         console.log("User account created successfully!");
-        console.log(user.email, password, accountName, nickname);
+        console.log(user.email, password, accountName);
     } catch (error) {
         console.error("Error creating user account:", error.message);
     }
@@ -39,7 +38,6 @@ signUpForm.addEventListener("submit", (e) => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const accountName = document.getElementById("accountName").value;
-    const nickname = document.getElementById("nickname").value;
 
-    signUp(email, password, accountName, nickname);
+    signUp(email, password, accountName);
 });
