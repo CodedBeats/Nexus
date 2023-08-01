@@ -1,5 +1,5 @@
 import { doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"
-import { db } from "../firebaseConfig.js"
+import { db } from "../misc/firebaseConfig.js"
 
 
 async function updateDocument() {
