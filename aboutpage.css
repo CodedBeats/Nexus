@@ -24,15 +24,29 @@
 }
 .nexus-box{
     display: flex;
-    width: 10%;
-    height: 10%;
+    width: 35%;
     border-radius: 25px;
     margin: 1%;
     background-color: #b115ef;
     text-align: center;
+    flex-direction: column;
+    transition: 250ms;
+}
+.nexus-box:hover{
+    display: flex;
+    width: 50%;
+    border-radius: 25px;
+    margin: 1%;
+    background-color: #270434;
+    text-align: center;
+    flex-direction: column;
 }
 .nexus-box h3{
     margin: auto;
+}
+.nexus-box p{
+    margin: auto;
+    margin-top: 0;
 }
 .creator-container{
     width: 99%;
@@ -104,7 +118,6 @@
     border-radius: 25px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
