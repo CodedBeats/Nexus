@@ -25,20 +25,34 @@
             </div>
         </div>
         <div class="user-box">
-            <div class="divided-user-box">
-                <img class="pro-pic" src="../images/profile_pic.png" alt="Profile picture">
+            <div class="divided-user-box-profilepic">
+                <img class="pro-pic" src="../images/profile_pic.png" alt="Profile picture"><br/>
                 <button>Change Profile Picture</button>
                 <button style="background-color: darkred">Remove</button>
             </div>
-            <div class="divided-user-box2">
+            <div class="divided-user-box-profileinfo">
                 <form action="/action_page.php">
-                    <label for="dname">Display Name</label><br/>
-                    <input type="text" id="user-display-name" name="displayname" placeholder="Your display name.."><br/>
+                    <label>Account Name</label><br/>
+                    <div class="data-box">
+                        <p id="acc-name">BadRabbit115</p>
+                    </div><br/>
                 
-                    <label for="email">Email Address</label><br/>
-                    <input type="text" id="user-email" name="emailaddress" placeholder="Your email address.."><br/>
+                    <label>Email Address</label><br/>
+                    <div class="data-box">
+                        <p id="email-address">johnfarrow@gmail.com</p>
+                    </div><br/>
+
+                    <label>Real Name</label><br/>
+                    <div class="data-box">
+                        <p id="real-name">John Edgar Farrow</p>
+                    </div><br/>
+
+                    <label>Birthdate</label><br/>
+                    <div class="data-box">
+                        <p id="birthdate">04 March, 2001</p>
+                    </div><br/>
                 
-                    <label for="state">States and Territories</label><br/>
+                    <!--<label for="state">States and Territories</label><br/>
                     <select id="state" name="state">
                       <option value="nsw">New South Wales</option>
                       <option value="vic">Victoria</option>
@@ -49,13 +63,10 @@
                       <option value="act">Australian Capital Territory</option>
                       <option value="nt">Northern Territory</option>
                       <option value="oth">Others</option>
-                    </select><br/>
+                    </select><br/>-->
                   
-                    <input type="submit" value="Submit">
+                    <!--<input type="submit" value="Submit">-->
                 </form>
-
-                <p id="field1">Field 1: </p>
-                <p id="field2">Field 2: </p>
             </div>
 
         </div>
