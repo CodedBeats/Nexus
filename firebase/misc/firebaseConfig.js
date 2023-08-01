@@ -20,6 +20,19 @@ async () => {
 };
 const db = getFirestore(app);
 
+// Listen for changes in authentication state
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // User is signed in, you can access the currentUser object here
+        console.log("User is signed in:", user);
+        // Now you can load the user's data on the page or perform any other actions.
+    } else {
+        // User is signed out
+        console.log("User is signed out.");
+        // You can redirect the user to the login page or perform other actions as needed.
+    }
+});
+
 // Get a list of documents from a collection in database
 async function getPop(db) {
     const popularity = collection(db, "popularity");
