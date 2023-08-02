@@ -123,14 +123,69 @@
     cursor: pointer;
 }
   
-input[type=submit]:hover {
+.user-box input[type=submit]:hover {
     background-color: #333333;
 }
 
-.divided-user-box2 input[type=text], select {
-    width: 90%;
+.user-box-games {
+    width: 48vw;
+    min-height: 100vh;
+    color: transparent;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 5px;
+    color: black;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
 }
 
-.divided-user-box2 input[type=submit] {
-    width: 90%;
+.user-box-games-indi {
+    width: 46vw;
+    min-height: 16vh;
+    color: transparent;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #BBBBBB;
+    border-width: 2px;
+    color: black;
+    margin-bottom: 20px;
+    padding: 25px 10px 0px 25px;
+}
+
+.user-box-games-indi1 {
+    width: 13vw;
+    float: left;
+}
+
+.user-box-games-indi2 {
+    width: 30vw;
+    float: right;
+}
+
+.game-pic {
+    height: 108px;
+    width: 192px;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: black;
+}
+
+.user-box-games-indi select {
+    height: 40px;
+    width: 130px;
+}
+
+.user-box-games button {
+    background-color: #202020; 
+    border: 1px solid white; 
+    color: white;
+    font-size: 13px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: center; 
+}
+
+.user-box-games button:hover {
+    background-color: #333333;
 }
