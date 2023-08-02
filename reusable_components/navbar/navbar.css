@@ -85,6 +85,7 @@ body {
 .nav-categories {
     border: 1px solid rgb(255, 255, 255);
     margin: 5px;
+    margin-top: 60px;
 }
 .nav-categories #open-nav-categories {
     display: none;
