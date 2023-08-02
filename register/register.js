@@ -1,8 +1,6 @@
-const registrationScreen = document.getElementsById("registration-screen")
+const registrationPanel = document.getElementById("registration-screen")
 
 function changeSize1() {
-    registrationScreen.style.width = "40%";
-    registrationScreen.style.height = "80%";
+    registrationPanel.classList.add("hovered");
 }
-
-registrationScreen.addEventListener("mouseoever", changeSize1);
+registrationPanel.addEventListener("mouseover", changeSize1);
