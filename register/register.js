@@ -1,10 +1,8 @@
-let registrationPanel = document.getElementsByClassName("registration-panel")
+const registrationScreen = document.getElementsById("registration-screen")
 
-function changeSize1(event) {
-    
-    registrationPanel.classList.add("permanent-hover");
-    registrationPanel.style.width = "40%";
-    registrationPanel.style.height = "80%";
-  }
+function changeSize1() {
+    registrationScreen.style.width = "40%";
+    registrationScreen.style.height = "80%";
+}
 
-registrationPanel.addEventListener("mouseoever", changeSize1);
+registrationScreen.addEventListener("mouseoever", changeSize1);
