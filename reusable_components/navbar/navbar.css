@@ -75,6 +75,9 @@ body {
 .nav-menu a:hover {
     color: rgb(223, 184, 12);
 }
+.nav-menu a i {
+    font-size: 1.5em;
+}
 
 /* nav categories */
 .nav-categories {
@@ -97,6 +100,9 @@ body {
 }
 .nav-categories a:hover {
     color: rgb(223, 184, 12);
+}
+.nav-categories a i {
+    font-size: 1.5em;
 }
 
 /* ===== mobile view ===== */

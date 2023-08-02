@@ -1,9 +1,8 @@
-import { updateDocument } from "../CRUD/update.js";
 import { createDocument } from "../CRUD/create.js";
-import { getData } from "../CRUD/read.js";
+// import { getData } from "../CRUD/read.js";
+import { updateDocument } from "../CRUD/update.js";
 import { deleteDocument } from "../CRUD/delete.js";
 
-// await getData("popularity", "doc33")
 
 // create doc
 document.getElementById("btn1").addEventListener("click", () => {
