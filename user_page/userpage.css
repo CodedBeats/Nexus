@@ -25,7 +25,7 @@
 }
 
 .user-box {
-    width: 50vw;
+    width: 48vw;
     min-height: 50vh;
     color: transparent;
     border-style: solid;
@@ -51,7 +51,7 @@
     background-color: #333333;
 }
 
-.divided-user-box {
+.divided-user-box-profilepic {
     width: 33%;
     min-height: 50vh;
     border-right: 2px solid black;
@@ -60,7 +60,7 @@
     float:left;
 }
 
-.divided-user-box2 {
+.divided-user-box-profileinfo {
     width: 60%;
     min-height: 50vh;
     padding: 0px 0px 0px 20px;
@@ -94,7 +94,15 @@
     margin-right: auto;
 }
 
-input[type=text], select {
+.data-box {
+    height: 40px;
+    width: 480px;
+    border: 1px solid #BBBBBB;
+    border-radius: 6px;
+    padding: 0px 20px 5px 20px;
+}
+
+.user-box input[type=text], select {
     width: 400px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -104,7 +112,7 @@ input[type=text], select {
     box-sizing: border-box;
 }
   
-input[type=submit] {
+.user-box input[type=submit] {
     width: 400px;
     background-color: #202020;
     color: white;
