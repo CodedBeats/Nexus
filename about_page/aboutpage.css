@@ -38,6 +38,7 @@
     border-radius: 25px;
     margin: 1%;
     background-color: #270434;
+    border: 2px solid #ffd700;
     text-align: center;
     flex-direction: column;
 }
