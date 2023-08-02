@@ -50,15 +50,15 @@
     background-color: #360ec8;
     transition: 500ms;
 }
-.login-panel:hover{
+.login-panel.hovered{
     width: 30%;
     height: 60%;
     border: 2px solid #ffd700;
 }
-.login-panel:hover input[type=text]{
+.login-panel.hovered input[type=text]{
     line-height: 30px;
 }
-.login-panel:hover input[type=password]{
+.login-panel.hovered input[type=password]{
     line-height: 30px;
 }
 .login-panel h1{
