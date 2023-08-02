@@ -4,12 +4,12 @@ let createNavbarComponent = () => {
     <div id="dom-side-nav" class="side-nav">
         <div class="nav-menu">
             <div id="open-nav-menu" style="display:none;">
-                <a href="../homepage.html">Home</a>
-                <a href="../aboutpage.html">About</a>
+                <a href="../home_page/homepage.html">Home</a>
+                <a href="../about_page/aboutpage.html">About</a>
             </div>
             <div id="collapsed-nav-menu">
-                <a href="../homepage.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
-                <a href="../aboutpage.html"><i class="fa-solid fa-info" style="color: #ffffff;"></i></a>
+                <a href="../home_page/homepage.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a href="../about_page/aboutpage.html"><i class="fa-solid fa-info" style="color: #ffffff;"></i></a>
             </div>
         </div>
         <div class="nav-categories">
