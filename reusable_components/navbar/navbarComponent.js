@@ -12,9 +12,9 @@ let createNavbarComponent = () => {
                 <a href="../about_page/aboutpage.html"><i class="fa-solid fa-info" style="color: #ffffff;"></i></a>
             </div>
         </div>
+        <p id="nav-categories-title">Popular Genres</p>
         <div class="nav-categories">
             <div id="open-nav-categories" style="display:none;">
-                <p>Popular Genres</p>
                 <a href="#">Puzzle</a>
                 <a href="#">Stratergy</a>
             </div>
@@ -36,6 +36,7 @@ let toggleNav = () => {
     // elements
     const sideNav = document.getElementById("dom-side-nav")
     const toggleNavBtn = document.getElementById("navbarToggleIcon")
+    const categoriesTitle = document.getElementById("nav-categories-title")
     // store in arr and foreach
     const openMenu = document.getElementById("open-nav-menu")
     const collapsedMenu = document.getElementById("collapsed-nav-menu")
@@ -43,12 +44,12 @@ let toggleNav = () => {
     const collapsedCategories = document.getElementById("collapsed-nav-categories")
 
     if (openMenu.style.display === "none") {
-        // toggleNavBtn.innerHTML = "Nav <<"
-
+        // expanded
         openMenu.style.display = "block"
         collapsedMenu.style.display = "none"
         openCategories.style.display = "block"
         collapsedCategories.style.display = "none"
+        categoriesTitle.style.display = "block"
         
         // phone view adjustments 
         if (window.screen.width <= 800) {
@@ -64,12 +65,12 @@ let toggleNav = () => {
             document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
         }
     } else {
-        // toggleNavBtn.innerHTML = "Nav >>"
-
+        // collapsed
         openMenu.style.display = "none"
         collapsedMenu.style.display = "block"
         openCategories.style.display = "none"
         collapsedCategories.style.display = "block"
+        categoriesTitle.style.display = "none"
 
         sideNav.style.width = "7vw";
         document.body.style.marginLeft = "7vw";
