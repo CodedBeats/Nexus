@@ -5,15 +5,11 @@ let createNavbarComponent = () => {
         <div class="nav-menu">
             <div id="open-nav-menu" style="display:none;">
                 <a href="../homepage.html">Home</a>
-                <a href="../game_page/gamespage.html">Games</a>
                 <a href="../aboutpage.html">About</a>
-                <a href="../firebase/firebase.html">Tests</a>
             </div>
             <div id="collapsed-nav-menu">
-                <a href="../homepage.html">Home</a>
-                <a href="../game_page/gamespage.html">Games</a>
-                <a href="../aboutpage.html">About</a>
-                <a href="../firebase/firebase.html">Tests</a>
+                <a href="../homepage.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a href="../aboutpage.html"><i class="fa-solid fa-info" style="color: #ffffff;"></i></a>
             </div>
         </div>
         <div class="nav-categories">
@@ -21,10 +17,10 @@ let createNavbarComponent = () => {
                 <p>Popular Genres</p>
                 <a href="#">Puzzle</a>
                 <a href="#">Stratergy</a>
-                <a href="#">Idle</a>
             </div>
             <div id="collapsed-nav-categories">
-                <a href="#">icon</a>
+                <a href="#"><i class="fa-solid fa-puzzle-piece fa-fade" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-dice-five fa-spin" style="color: #ffffff;"></i></i></a>
             </div>
         </div>
     </div>
