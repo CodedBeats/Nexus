@@ -2,6 +2,9 @@
 let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
+        <div class="logo">
+            logo placeholder
+        </div>
         <div class="search-container">
             <form class="search-form">
                 <input
