@@ -1,6 +1,6 @@
 import { getDoc, doc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
-import { db, auth } from "../misc/firebaseConfig.js";
+import { db, auth } from "../firebase/misc/firebaseConfig.js";
 
 
 async function loadProfile() {
@@ -16,15 +16,14 @@ async function loadProfile() {
             if (profileSnapshot.exists()) {
                 // Get the user's profile data
                 const profileData = profileSnapshot.data();
-                console.log(profileData.accountName, profileData.email);
+                console.log(profileData.accountName, profileData.email, profileData.realName);
 
                 // Update the profile page HTML elements with the user's information
-                document.getElementById("field1").textContent = profileData.accountName;
-                document.getElementById("field2").textContent = profileData.email;
+                document.getElementById("acc-name").textContent = profileData.accountName;
+                document.getElementById("email-address").textContent = profileData.email;
+                document.getElementById("real-name").textContent = profileData.realName;
                 // Add more fields as needed
 
-                // Show the profile page ig the original profile display = "none"
-                // document.getElementById("profilePage").style.display = "block";
             } else {
                 console.log("User profile not found");
             }
@@ -44,7 +43,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("User is signed in:", user);
 
-        // Call the function to load the profile when the page loads
+        // load the profile
         loadProfile()
 
     } else {
