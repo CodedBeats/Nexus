@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         menuItems.forEach((item) => {
             const pageName = item.dataset.page;
-            console.log(currentPage, pageName)
+            // console.log(currentPage, pageName)
             if (currentPage === pageName) {
                 item.classList.add("active");
             } else {

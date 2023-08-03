@@ -18,13 +18,13 @@ let createHeaderComponent = () => {
             </form>
         </div>
         <div class="profile">
-            <a href="../signup/signup.html">
+            <a href="../signup/signup.html" id="signup-btn">
                 <button>Signup</button>
             </a>
-            <a href="../login/login.html">
+            <a href="../login/login.html" id="login-btn">
                 <button>Login</button>
             </a>
-            <a href="../user_page/userpage-profile.html">
+            <a href="../user_page/userpage-profile.html" id="user-btn" style="display: none;">
                 <i class="fa fa-user-circle-o fa-3x"></i>
             </a>
         </div>
