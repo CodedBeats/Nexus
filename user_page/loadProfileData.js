@@ -16,12 +16,12 @@ async function loadProfile() {
             if (profileSnapshot.exists()) {
                 // Get the user's profile data
                 const profileData = profileSnapshot.data();
-                console.log(profileData.accountName, profileData.email, profileData.realName);
+                console.log(profileData.email, profileData.username, profileData.password);
 
                 // Update the profile page HTML elements with the user's information
-                document.getElementById("acc-name").textContent = profileData.accountName;
-                document.getElementById("email-address").textContent = profileData.email;
-                document.getElementById("real-name").textContent = profileData.realName;
+                document.getElementById("email").textContent = profileData.email;
+                document.getElementById("username").textContent = profileData.username;
+                document.getElementById("password").textContent = profileData.password;
                 // Add more fields as needed
 
             } else {
