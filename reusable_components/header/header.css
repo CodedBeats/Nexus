@@ -38,20 +38,27 @@ body {
     display: flex;
     border: 2px solid rgb(161, 161, 161);
 }
-.search-input {
+.search-form input {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border: none;
     width: 30vw;
+}
+.search-form input:focus {
+    outline: none;
+}
+.search-form input::placeholder { 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1em;
 }
 .search-input[type="text"], textarea {
     background-color : #b6b6b6; 
 }
 /* Chrome, Firefox, Opera, Safari 10.1+ */
-::placeholder { 
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.2em;
-}
+
 .search-form button {
     padding: 10px 20px;
     background-color: rgb(97, 97, 97);
