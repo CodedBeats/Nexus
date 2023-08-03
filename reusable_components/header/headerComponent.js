@@ -18,6 +18,9 @@ let createHeaderComponent = () => {
             </form>
         </div>
         <div class="profile">
+            <a href="../signup/signup.html">
+                <button>Signup</button>
+            </a>
             <a href="../login/login.html">
                 <button>Login</button>
             </a>
