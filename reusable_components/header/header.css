@@ -57,8 +57,6 @@ body {
 .search-input[type="text"], textarea {
     background-color : #b6b6b6; 
 }
-/* Chrome, Firefox, Opera, Safari 10.1+ */
-
 .search-form button {
     padding: 10px 20px;
     background-color: rgb(97, 97, 97);
@@ -98,4 +96,7 @@ body {
 .profile {
     text-align: right;
     padding: 20px;
+}
+.user-icon {
+    color: white;
 }

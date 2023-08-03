@@ -24,7 +24,7 @@ let createHeaderComponent = () => {
             <a href="../login/login.html" id="login-btn">
                 <button>Login</button>
             </a>
-            <a href="../user_page/userpage-profile.html" id="user-btn" style="display: none;">
+            <a href="../user_page/userpage-profile.html" id="user-btn" class="user-icon" style="display: none;">
                 <i class="fa fa-user-circle-o fa-3x"></i>
             </a>
         </div>
