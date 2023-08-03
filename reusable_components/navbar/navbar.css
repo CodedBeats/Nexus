@@ -44,12 +44,15 @@ body {
 .nav-menu a.active {
     border-left: 8px solid #A48EFF;
     margin-left: -8px;
-
-    .nav-link-name {
-        color: rgb(226, 155, 0);
-    }
+}
+.nav-menu a.active .nav-link-name {
+    color: #A48EFF;
+}
+.nav-menu a.active i {
+    color: #A48EFF !important;
 }
 .nav-menu a i {
+    color: #878B9F;
     width: 21px;
     font-size: 0.6em;
     margin: 0px 10px;

@@ -6,7 +6,7 @@ let createNavbarComponent = () => {
             <div id="collapsed-nav-menu">
                 <a href="../home_page/homepage.html" data-page="homepage">
                     <div class="nav-link">
-                        <i class="fa-solid fa-house" style="color: #878B9F;"></i>
+                        <i class="fa-solid fa-house"></i>
                         <div class="nav-link-name">Home</div>
                     </div>
                 </a>
