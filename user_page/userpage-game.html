@@ -18,6 +18,10 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <link rel="icon" type="image/x-icon" href="../images/favicon/favicon8.png">
+        
+        <!-- load user data -->
+        <script type="module" src="loadProfileData.js"></script>
+        <script type="module" src="logout.js"></script>
     </head>
     <body>
         <div id="navbar-container"></div>
@@ -27,7 +31,7 @@
                 <a href="../user_page/userpage-profile.html"><button>Profile</button></a>
                 <a href="../user_page/userpage-account.html"><button>Account</button></a>
                 <a href="#"><button><b>Game Management</b></button></a>
-                <a href="../home_page/homepage.html"><button style="background-color: #590000;">Logout</button></a>
+                <a href="../home_page/homepage.html"><button id="logout-btn" style="background-color: #590000;">Logout</button></a>
             </div>
         </div>
         <div class="user-box-games">
