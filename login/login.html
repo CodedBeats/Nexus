@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Login-page</title>
-        <link rel="stylesheet" type="text/css" href="login.css"/>
-    </head>
-    <body class="login-body">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- login page style -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- component styles -->
+    <link rel="stylesheet" type="text/css" href="../reusable_components/navbar/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../reusable_components/header/header.css" />
+    <script type="module" src="../reusable_components/header/loginStatus.js"></script>
+    <link rel="stylesheet" type="text/css" href="../DOM/scrollbar.css" />
+
+    <!-- load icons -->
+    <script src="https://kit.fontawesome.com/a535b5a3c6.js" crossorigin="anonymous"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/favicon/favicon8.png">
+
+    <!-- load scripts -->
+    <script type="module" src="login.js"></script>
+    <title>Nexus - Login</title>
+</head>
+<body>
+    <!-- load header and navbar -->
+    <div id="navbar-container"></div>
+    <div id="header-container"></div>
+
+    <div class="login-container">
         <div class="login-box">
-            <div class="login-website_title">
-                <h1>NEXUS</h1>
+            <h1>Login</h1>
+            <div class="login-form-group">
+                <input type="email" id="email" placeholder="Email" required />
             </div>
-            <div id = "login-screen" class="login-panel">
-                    <h1>LOGIN</h1>
-                <div class="login-element">
-                    <label class="login-label" for="email">Email:</label>
-                    <input type="text" name="email" id="user-email" placeholder="Enter your Email">
-                </div>
-                <div class="login-element">
-                    <label class="login-label" for="password">Password:</label>
-                    <input type="password" name="password" id="user-password" placeholder="Enter your Password">
-                </div>
-                <div class="login-element">
-                    <input type="submit" value="login">
-                </div>
+            <div class="login-form-group">
+                <input type="password" id="password" placeholder="Password" required />
             </div>
+            <button id="loginBtn">Login</button>
+            <div id="errorMessage"></div>
         </div>
-        <script src="login.js"></script>
-    </body>
+    </div>
+
+    <!-- load header and navbar -->
+    <script src="../reusable_components/navbar/navbarComponent.js"></script>
+    <script src="../reusable_components/header/headerComponent.js"></script>
+</body>
 </html>

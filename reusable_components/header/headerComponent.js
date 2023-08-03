@@ -2,6 +2,9 @@
 let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
+        <div class="logo">
+            logo placeholder
+        </div>
         <div class="search-container">
             <form class="search-form">
                 <input
@@ -15,7 +18,15 @@ let createHeaderComponent = () => {
             </form>
         </div>
         <div class="profile">
-            <a href="../user_page/userpage-profile.html"><i class="fa fa-user-circle-o fa-3x"></i></a>
+            <a href="../signup/signup.html" id="signup-btn">
+                <button>Signup</button>
+            </a>
+            <a href="../login/login.html" id="login-btn">
+                <button>Login</button>
+            </a>
+            <a href="../user_page/userpage-profile.html" id="user-btn" class="user-icon" style="display: none;">
+                <i class="fa fa-user-circle-o fa-3x"></i>
+            </a>
         </div>
     </div>
     `;

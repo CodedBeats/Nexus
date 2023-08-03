@@ -1,38 +1,71 @@
+body {
+    background-color: rgb(94, 94, 94);
+}
+
 .header {
+    z-index: 5;
     background-color: #f1f1f1;
-    padding: 20px;
-    top: 0;
+    height: 8vh;
+    /* background: rgba(94, 94, 94, 0.9); */
+    background: rgb(94, 94, 94);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo,
+.search-container,
+.profile {
     flex: 1;
+    padding: 20px;
+}
+
+/* logo */
+.logo {
+    text-align: left;
 }
 
 /* search */
 .search-container {
     text-align: center;
     display: flex;
-    margin-left: 30%;
 }
 .search-form {
     display: flex;
-    border: 2px solid lightgrey;
+    border: 2px solid rgb(161, 161, 161);
 }
-.search-input {
+.search-form input {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border: none;
     width: 30vw;
 }
+.search-form input:focus {
+    outline: none;
+}
+.search-form input::placeholder { 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1em;
+}
+.search-input[type="text"], textarea {
+    background-color : #b6b6b6; 
+}
 .search-form button {
     padding: 10px 20px;
-    background-color: darkgrey;
-    color: #fff;
-    border: none;
+    background-color: rgb(97, 97, 97);
+    color: #e2e2e2;
     cursor: pointer;
     transition: 0.25s;
 }
 .search-form button:hover {
-    background-color: grey;
+    background-color: rgb(39, 39, 39);
     animation: hoverCycle 5s infinite;
 }
 @keyframes hoverCycle {
@@ -55,13 +88,15 @@
         color: indigo;
     }
     100% {
-        color: violet;
+        color: red;
     }
 }
 
 /* profile */
 .profile {
-    flex: 1;
     text-align: right;
-    /* margin-left: auto; */
+    padding: 20px;
+}
+.user-icon {
+    color: white;
 }

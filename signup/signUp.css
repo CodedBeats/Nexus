@@ -1,5 +1,5 @@
-/* login container */
-.login-container {
+/* signup container */
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
 }
 
 /* form container */
-.login-box {
+.signup-box {
     padding: 20px;
     background-color: #222;
     border-radius: 8px;
@@ -22,36 +22,36 @@
 }
 
 /* title */
-.login-box h1 {
+.signup-box h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 /* form group container */
-.login-form-group {
+.signup-form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
 /* input */
-.login-form-group input {
+.signup-form-group input {
     padding: 12px 14px;
     border: none;
     border-radius: 4px;
     background-color: #444;
     color: white;
 }
-.login-form-group input:focus {
+.signup-form-group input:focus {
     outline: 3px solid #7E3EFF;;
 }
-.login-form-group ::placeholder {
+.signup-form-group ::placeholder {
     font-size: 1.2em;
     font-weight: bold;
 }
 
 /* submit button */
-.login-box button {
+.signup-box button {
     font-size: 1em;
     font-weight: bold;
     width: 100%;
@@ -63,12 +63,12 @@
     cursor: pointer;
     transition: background-color 0.2s;
 }
-.login-box button:hover {
+.signup-box button:hover {
     background-color: #8e5fee;
 }
 
 /* error message */
-.login-box #errorMessage {
+.signup-box #errorMessage {
     color: red;
     margin-top: 10px;
 }

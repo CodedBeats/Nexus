@@ -1,6 +1,26 @@
-const loginPanel = document.getElementById("login-screen")
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+import { auth } from "../firebase/misc/firebaseConfig.js";
 
-function changeSize1() {
-    loginPanel.classList.add("hovered");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const loginBtn = document.getElementById("loginBtn");
+const errorMessage = document.getElementById("errorMessage");
+
+// Function to handle login
+async function handleLogin() {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+
+    try {
+        // Sign in with email and password using Firebase Authentication
+        await signInWithEmailAndPassword(auth, email, password);
+
+        // Redirect the user to a page
+        window.location.href = "../../../user_page/userpage-profile.html";
+    } catch (error) {
+        errorMessage.textContent = error.message;
+    }
 }
-loginPanel.addEventListener("mouseover", changeSize1);
+
+// Add event listener to the login button
+loginBtn.addEventListener("click", handleLogin);
