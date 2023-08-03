@@ -18,8 +18,12 @@ let createHeaderComponent = () => {
             </form>
         </div>
         <div class="profile">
-            <button>Login</button>
-            <a href="../user_page/userpage-profile.html"><i class="fa fa-user-circle-o fa-3x"></i></a>
+            <a href="../login/login.html">
+                <button>Login</button>
+            </a>
+            <a href="../user_page/userpage-profile.html">
+                <i class="fa fa-user-circle-o fa-3x"></i>
+            </a>
         </div>
     </div>
     `;
