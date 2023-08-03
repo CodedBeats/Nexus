@@ -25,7 +25,7 @@ body {
 }
 
 
-/* nav links */
+/* nav menu links */
 .nav-menu a {
     font-family: 'Quantico', sans-serif;
     text-align: center;
@@ -79,37 +79,41 @@ body {
 }
 
 
+
 /* nav categories */
-.side-nav p {
-    font-family: 'Quantico', sans-serif;
-    font-size: 1.5em;
-    color: #c9c9c9;
-    text-align: center;
-    margin: 0;
-    margin-top: 50px;
-    display: none;
-}
 .nav-categories {
     margin: 5px;
+    margin-top: 20px;
 }
-.nav-categories #open-nav-categories {
-    display: none;
-}
+
+
+/* nav categories links */
 .nav-categories a {
     font-family: 'Quantico', sans-serif;
     text-align: center;
-    padding: 8px;
+    padding: 4px 8px;
     text-decoration: none;
-    font-size: 1.5em;
-    color: #818181;
+    font-size: 2em;
     display: block;
-    transition: 0.3s;
+    transition: ease-in-out 0.2s;
 }
 .nav-categories a:hover {
-    color: rgb(223, 184, 12);
+    .nav-categories-name {
+        transform: translatex(10px);
+        color: rgb(226, 155, 0);
+    }
 }
 .nav-categories a i {
-    font-size: 1.5em;
+    color: #878B9F;
+    width: 21px;
+    font-size: 0.6em;
+    margin: 0px 10px;
+}
+.nav-categories-name {
+    font-size: 0.7em;
+    padding-top: 7px;
+    transition: ease-in-out 0.2s;
+    color: white;
 }
 
 
