@@ -3,7 +3,7 @@ let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
         <div class="logo">
-            logo placeholder
+            <img src="../../images/logo/logo.png" alt="logo">
         </div>
         <div class="search-container">
             <form class="search-form">

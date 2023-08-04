@@ -17,15 +17,13 @@ body {
     left: 0;
 }
 
-/* .logo,
-.search-container {
-    flex: 1;
-    padding: 20px;
-} */
-
 /* logo */
 .logo {
     padding-left: 20px;
+}
+.logo img {
+    height: 8vh;
+    width: 100%;
 }
 
 /* search */
