@@ -19,10 +19,10 @@ let createHeaderComponent = () => {
         </div>
         <div class="profile">
             <a href="../signup/signup.html" id="signup-btn">
-                <button>Signup</button>
+                <button class="login-btn">Signup</button>
             </a>
             <a href="../login/login.html" id="login-btn">
-                <button>Login</button>
+                <button class="signup-btn">Login</button>
             </a>
             <a href="../user_page/userpage-profile.html" id="user-btn" class="user-icon" style="display: none;">
                 <i class="fa fa-user-circle-o fa-3x"></i>
