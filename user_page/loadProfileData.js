@@ -41,10 +41,16 @@ async function loadProfile() {
 // Listen for changes in authentication state
 onAuthStateChanged(auth, (user) => {
     if (user) {
+        // diaply loading page
+        const loadingPage = document.getElementById("loading-container")
+
         console.log("User is signed in:", user);
 
         // load the profile
         loadProfile()
+
+        // hide loading page after data load
+        loadingPage.style.display = "none"
 
     } else {
         // User is signed out
