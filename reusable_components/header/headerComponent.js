@@ -3,7 +3,9 @@ let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
         <div class="logo">
-            <img src="../../images/logo/logo.png" alt="logo">
+            <a href="../home_page/homepage.html">
+                <img src="../../images/logo/logo.png" alt="logo">
+            </a>
         </div>
         <div class="search-container">
             <form class="search-form">
