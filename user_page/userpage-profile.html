@@ -24,6 +24,7 @@
         <!-- load user data -->
         <script type="module" src="loadProfileData.js"></script>
         <script type="module" src="logout.js"></script>
+        <script type="module" src="deleteAccount.js"></script>
     </head>
     <body>
         <!-- reusable components -->
@@ -45,7 +46,7 @@
                     <a href="../user_page/userpage-profilepics.html">
                         <button class="change-pfp">Change Profile Picture</button>
                     </a>
-                    <button class="delete-acc-btn">Permanently Delete Account</button>
+                    <button id="delete-acc-btn" class="delete-acc-btn">Permanently Delete Account</button>
                 </div>
                 <div class="divided-user-box-profileinfo">
                     <form action="/action_page.php" class="profile-data-form">
