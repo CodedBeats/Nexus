@@ -2,7 +2,7 @@
     bottom: 0;
     display: flex;
     justify-content: center;
-    width: 91vw;
+    width: 100%;
     border-top: 3px solid rgb(43, 43, 43);
     background-color: #000000; /* Dark grey background color for the footer */
     color: #fff; /* Text color for the footer */
