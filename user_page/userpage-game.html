@@ -22,7 +22,7 @@
         <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
         
         <!-- load user data -->
-        <script type="module" src="loadProfileData.js"></script>
+        <!-- <script type="module" src="loadProfileData.js"></script> -->
         <script type="module" src="logout.js"></script>
     </head>
     <body>
@@ -31,95 +31,97 @@
         <div id="header-container"></div>
         <div id="loading-container"></div>
 
-        <div style="margin: 20px 20px 0px 20px;">
-            <div class="btn-group">
-                <a href="../user_page/userpage-profile.html"><button>Profile</button></a>
-                <a href="#"><button><b>Game Management</b></button></a>
-                <a href="../home_page/homepage.html"><button id="logout-btn" style="background-color: #590000;">Logout</button></a>
-            </div>
-        </div>
-        <div class="user-box-games">
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_1.png" alt="Game 1 picture">
-                </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 1</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
+        <div class="profile-page">
+            <div style="margin: 20px 20px 0px 20px;">
+                <div class="btn-group">
+                    <a href="../user_page/userpage-profile.html"><button>Profile</button></a>
+                    <a href="#"><button><b>Game Management</b></button></a>
+                    <a href="../home_page/homepage.html"><button id="logout-btn">Logout</button></a>
                 </div>
             </div>
+            <div class="user-box-games">
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_1.png" alt="Game 1 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 1</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
+                </div>
 
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_2.png" alt="Game 2 picture">
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_2.png" alt="Game 2 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 2</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
                 </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 2</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
-                </div>
-            </div>
 
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_3.png" alt="Game 3 picture">
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_3.png" alt="Game 3 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 3</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
                 </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 3</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
-                </div>
-            </div>
 
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_4.png" alt="Game 4 picture">
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_4.png" alt="Game 4 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 4</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
                 </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 4</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
-                </div>
-            </div>
 
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_5.png" alt="Game 5 picture">
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_5.png" alt="Game 5 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 5</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
                 </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 5</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
-                </div>
-            </div>
 
-            <div class="user-box-games-indi">
-                <div class="user-box-games-indi1">
-                    <img class="game-pic" src="../images/game_title/game_pic_6.png" alt="Game 6 picture">
-                </div>
-                <div class="user-box-games-indi2">
-                    <h3>Title 6</h3>
-                    <select name="visibility">
-                        <option value="visible">Visible</option>
-                        <option value="hidden">Hidden</option>
-                    </select>
-                    <button style="background-color: darkred">Delete</button>
+                <div class="user-box-games-indi">
+                    <div class="user-box-games-indi1">
+                        <img class="game-pic" src="../images/game_title/game_pic_6.png" alt="Game 6 picture">
+                    </div>
+                    <div class="user-box-games-indi2">
+                        <h3>Title 6</h3>
+                        <select name="visibility">
+                            <option value="visible">Visible</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                        <button class="delete-game-btn">Delete</button>
+                    </div>
                 </div>
             </div>
         </div>

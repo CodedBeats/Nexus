@@ -36,17 +36,20 @@
                 <div class="btn-group">
                     <a href="#"><button><b>Profile</b></button></a>
                     <a href="../user_page/userpage-game.html"><button>Game Management</button></a>
-                    <a href="../home_page/homepage.html"><button id="logout-btn" style="background-color: #590000;">Logout</button></a>
+                    <a href="../home_page/homepage.html"><button id="logout-btn">Logout</button></a>
                 </div>
             </div>
             <div class="user-box">
                 <div class="divided-user-box-profilepic">
                     <img class="pro-pic" src="../images/profile-pic/profile_pic1.png" alt="Profile picture"><br/>
-                    <a href="../user_page/userpage-profilepics.html"><button>Change Profile Picture</button></a>
-                    <button style="background-color: darkred">Permanently Delete Account</button>
+                    <a href="../user_page/userpage-profilepics.html">
+                        <button class="change-pfp">Change Profile Picture</button>
+                    </a>
+                    <button class="delete-acc-btn">Permanently Delete Account</button>
                 </div>
                 <div class="divided-user-box-profileinfo">
                     <form action="/action_page.php" class="profile-data-form">
+                        <p class="form-title">Your Details</p>
                         <label>Email Address</label><br/>
                         <div class="data-box">
                             <p id="email">Email</p>
