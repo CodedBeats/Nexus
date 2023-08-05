@@ -15,14 +15,14 @@ let createNavbarComponent = () => {
                     <div class="nav-link-name">About</div>
                 </div>
             </a>
-            <a href="#">
-                <div class="nav-link" data-page="trendingpage">
+            <a href="../trending_page/trendingpage.html" data-page="trendingpage">
+                <div class="nav-link">
                     <i class="fa-solid fa-fire"></i>
                     <div class="nav-link-name">Trending</div>
                 </div>
             </a>
             <a href="#">
-                <div class="nav-link" data-page="randompage">
+                <div class="nav-link">
                     <i class="fa-solid fa-shuffle"></i>
                     <div class="nav-link-name">Random</div>
                 </div>
