@@ -3,7 +3,7 @@
     <head>
         <title>Website Title</title>
         <!-- home page styles -->
-        <link rel="stylesheet" type="text/css" href="homepage.css" />
+        <link rel="stylesheet" type="text/css" href="trending.css" />
 
         <!-- component styles -->
         <link rel="stylesheet" type="text/css" href="../reusable_components/navbar/navbar.css" />
@@ -22,6 +22,7 @@
         <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
 
         <!-- load scripts -->
+        <script type="module" src="./loadTrending.js"></script>
         <script src="../DOM/activeLinks.js"></script>
     </head>
     <body>
@@ -31,7 +32,9 @@
         <div id="loading-container"></div>
 
         <div class="trending-container">
-            xx
+            <div class="game-container" id="gameContainer">
+                <!-- Trending games will be dynamically loaded here -->
+            </div>
         </div>
 
         <div id="footer-container"></div>
