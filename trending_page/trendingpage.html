@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- login page style -->
-        <link rel="stylesheet" href="signUp.css">
+        <title>Website Title</title>
+        <!-- home page styles -->
+        <link rel="stylesheet" type="text/css" href="trending.css" />
 
         <!-- component styles -->
         <link rel="stylesheet" type="text/css" href="../reusable_components/navbar/navbar.css" />
@@ -23,8 +22,8 @@
         <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
 
         <!-- load scripts -->
-        <script type="module" src="signUp.js"></script>
-        <title>Nexus - Signup</title>
+        <script type="module" src="./loadTrending.js"></script>
+        <script src="../DOM/activeLinks.js"></script>
     </head>
     <body>
         <!-- reusable components -->
@@ -32,27 +31,14 @@
         <div id="header-container"></div>
         <div id="loading-container"></div>
 
-        <div class="signup-container">
-            <div class="signup-box">
-                <h1>Sign Up</h1>
-                <form id="signUpForm">
-                    <div class="signup-form-group">
-                        <input type="email" id="email" placeholder="Email" required />
-                    </div>
-                    <div class="signup-form-group">
-                        <input type="password" id="password" placeholder="Password" required />
-                    </div>
-                    <div class="signup-form-group">
-                        <input type="text" id="username" placeholder="Username" required />
-                    </div>
-                    <button type="submit">Sign Up</button>
-                </form>
+        <div class="trending-container">
+            <div class="game-container" id="gameContainer">
+                <!-- Trending games will be dynamically loaded here -->
             </div>
         </div>
 
         <div id="footer-container"></div>
-
-        <!-- load header and navbar -->
+        
         <script src="../reusable_components/navbar/navbarComponent.js"></script>
         <script src="../reusable_components/header/headerComponent.js"></script>
         <script src="../reusable_components/loading/loadingComponent.js"></script>

@@ -8,6 +8,8 @@
         <!-- component styles -->
         <link rel="stylesheet" type="text/css" href="../reusable_components/navbar/navbar.css" />
         <link rel="stylesheet" type="text/css" href="../reusable_components/header/header.css" />
+        <link rel="stylesheet" type="text/css" href="../reusable_components/loading/loading.css" />
+        <link rel="stylesheet" type="text/css" href="../reusable_components/footer/footer.css" />
         <script type="module" src="../reusable_components/header/loginStatus.js"></script>
         <link rel="stylesheet" type="text/css" href="../DOM/scrollbar.css" />
         
@@ -17,50 +19,62 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link rel="icon" type="image/x-icon" href="../images/favicon/favicon8.png">
+        <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
         
         <!-- load user data -->
         <script type="module" src="loadProfileData.js"></script>
         <script type="module" src="logout.js"></script>
+        <script type="module" src="deleteAccount.js"></script>
     </head>
     <body>
+        <!-- reusable components -->
         <div id="navbar-container"></div>
         <div id="header-container"></div>
-        <div style="margin: 20px 20px 0px 20px;">
-            <div class="btn-group">
-                <a href="#"><button><b>Profile</b></button></a>
-                <a href="../user_page/userpage-account.html"><button>Account</button></a>
-                <a href="../user_page/userpage-game.html"><button>Game Management</button></a>
-                <a href="../home_page/homepage.html"><button id="logout-btn" style="background-color: #590000;">Logout</button></a>
+        <div id="loading-container"></div>
+
+        <div class="profile-page">
+            <div style="margin: 20px 20px 0px 20px;">
+                <div class="btn-group">
+                    <a href="#"><button><b>Profile</b></button></a>
+                    <a href="../user_page/userpage-game.html"><button>Game Management</button></a>
+                    <a href="../home_page/homepage.html"><button id="logout-btn">Logout</button></a>
+                </div>
             </div>
+            <div class="user-box">
+                <div class="divided-user-box-profilepic">
+                    <img class="pro-pic" src="../images/profile-pic/profile_pic1.png" alt="Profile picture"><br/>
+                    <a href="../user_page/userpage-profilepics.html">
+                        <button class="change-pfp">Change Profile Picture</button>
+                    </a>
+                    <button id="delete-acc-btn" class="delete-acc-btn">Permanently Delete Account</button>
+                </div>
+                <div class="divided-user-box-profileinfo">
+                    <form action="/action_page.php" class="profile-data-form">
+                        <p class="form-title">Your Details</p>
+                        <label>Email Address</label><br/>
+                        <div class="data-box">
+                            <p id="email">Email</p>
+                        </div><br/>
+
+                        <label>Username</label><br/>
+                        <div class="data-box">
+                            <p id="username">Username</p>
+                        </div><br/>
+
+                        <label>Password</label><br/>
+                        <div class="data-box">
+                            <p id="password">Password</p>
+                        </div><br/>
+                    </form>
+                </div>
+            </div>    
         </div>
-        <div class="user-box">
-            <div class="divided-user-box-profilepic">
-                <img class="pro-pic" src="../images/profile-pic/profile_pic1.png" alt="Profile picture"><br/>
-                <a href="../user_page/userpage-profilepics.html"><button>Change Profile Picture</button></a>
-                <button style="background-color: darkred">Remove</button>
-            </div>
-            <div class="divided-user-box-profileinfo">
-                <form action="/action_page.php">
-                    <label>Email Address</label><br/>
-                    <div class="data-box">
-                        <p id="email">Email</p>
-                    </div><br/>
 
-                    <label>Username</label><br/>
-                    <div class="data-box">
-                        <p id="username">Username</p>
-                    </div><br/>
+        <div id="footer-container"></div>
 
-                    <label>Password</label><br/>
-                    <div class="data-box">
-                        <p id="password">Password</p>
-                    </div><br/>
-                </form>
-            </div>
-
-        </div>
         <script src="../reusable_components/navbar/navbarComponent.js"></script>
         <script src="../reusable_components/header/headerComponent.js"></script>
+        <script src="../reusable_components/loading/loadingComponent.js"></script>
+        <script src="../reusable_components/footer/footerComponent.js"></script>
     </body>
 </html>

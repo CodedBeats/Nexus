@@ -2,6 +2,7 @@ import { auth } from "../../firebase/misc/firebaseConfig.js";
 
 // Function to handle the user's login status
 function handleLoginStatus(user) {
+    const loadingPage = document.getElementById("loading-container");
     const signupBtn = document.getElementById("signup-btn");
     const loginBtn = document.getElementById("login-btn");
     const userIcon = document.getElementById("user-btn");
@@ -19,6 +20,9 @@ function handleLoginStatus(user) {
         loginBtn.style.display = "block";
         userIcon.style.display = "none";
     }
+
+    // Hide loading page
+    loadingPage.style.display = "none";
 }
 
 // Check the user's login status on page load and whenever it changes

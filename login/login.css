@@ -43,7 +43,7 @@
     color: white;
 }
 .login-form-group input:focus {
-    outline: 3px solid #7E3EFF;;
+    outline: 3px solid #7E3EFF;
 }
 .login-form-group ::placeholder {
     font-size: 1.2em;
