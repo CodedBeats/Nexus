@@ -32,7 +32,7 @@ function renderGameCard(game) {
 // Function to load trending games from db
 async function loadTrendingGames() {
     const trendingGamesContainer = document.getElementById("gameContainer");
-    const threshold = 1; // load games >= threshold
+    const threshold = 2; // load games >= threshold
 
     const trendingGames = await fetchTrendingGames(threshold);
     trendingGames.forEach((game) => {

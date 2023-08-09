@@ -4,19 +4,37 @@
     min-height: 93vh;
 }
 
+.trending-title {
+    padding-top: 10vh;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-left: 5vw;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .game-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
 }
   
 .game-card {
-    width: 200px;
+    width: 110px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.game-card:hover {
+    border-color: #5e24b4;
+    cursor: pointer;
 }
 
 .game-image-container {
@@ -42,4 +60,5 @@
 .game-popularity {
     margin-top: 5px;
     color: #888;
+    align-self: flex-end;
 }
