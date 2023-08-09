@@ -5,24 +5,24 @@
     justify-content: center;
     flex-direction: column;
 }
-.about-box h2{
+.about-box h2 {
     text-align: center;
-    color: #e2eafd ;
+    color: #e2eafd;
 }
-.about-box h3{
-    color: #e2eafd ;
+.about-box h3 {
+    color: #e2eafd;
 }
-.about-box p{
-    color: #e2eafd ;
+.about-box p {
+    color: #e2eafd;
 }
-.nexus-container{
+.nexus-container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.nexus-box{
+.nexus-box {
     display: flex;
     width: 35%;
     border-radius: 25px;
@@ -32,23 +32,24 @@
     flex-direction: column;
     transition: 250ms;
 }
-.nexus-box:hover{
+.nexus-box:hover {
     display: flex;
     width: 50%;
     border-radius: 25px;
     margin: 1%;
     background-color: #270434;
+    border: 2px solid #ffd700;
     text-align: center;
     flex-direction: column;
 }
-.nexus-box h3{
+.nexus-box h3 {
     margin: auto;
 }
-.nexus-box p{
+.nexus-box p {
     margin: auto;
     margin-top: 0;
 }
-.creator-container{
+.creator-container {
     width: 99%;
     min-height: 26.6vh;
     border-radius: 25px;
@@ -61,58 +62,63 @@
     margin-right: auto;
     transition: 250ms;
 }
-.creator-container:hover{
+.creator-container:hover {
     background-color: #b115ef;
 }
-.creator{
+.creator {
     display: flex;
     justify-content: space-between;
     margin: 1%;
 }
-.image{
+.image {
     align-self: center;
     margin: 1%;
 }
-.image img{
+.image img {
     border-radius: 50%;
     width: 160px;
     height: 160px;
 }
-.information{
+.information {
     margin: 1%;
     width: 50%;
 }
-.social-links{
+.social-links {
     display: flex;
     flex-direction: column;
     margin: 1%;
     text-align: center;
     width: 10%;
 }
-.image-grid{
+.image-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 1 2 3 4 5 6;
 }
-.links{
+.links {
     width: 100%;
     height: auto;
     grid-area: auto;
     border-radius: 50%;
 }
-.linksLast{
+.github-link {
+    width: 100%;
+    height: auto;
+    grid-area: auto;
+}
+.linksLast {
     width: 100%;
     height: auto;
     border-radius: 0%;
 }
-.image-grid a:last-of-type{
+.image-grid a:last-of-type {
     width: 200%;
     height: auto;
     border-radius: 0%;
 }
-.about-container{
+.about-container {
     width: 99%;
     min-height: 26.6vh;
     border-radius: 25px;
@@ -122,7 +128,7 @@
     margin-right: auto;
     margin-bottom: 1%;
 }
-.about-container a{
+.about-container a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -130,7 +136,7 @@
     width: 25%;
     min-height: 40vh;
 }
-.git-link{
+.git-link {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -144,17 +150,17 @@
     background-repeat: no-repeat;
     transition: 250ms;
 }
-.git-link:hover{
+.git-link:hover {
     background-color: #360ec8;
     text-decoration: underline gold;
 }
-.git-link p{
+.git-link p {
     display: flex;
     text-align: left;
     margin: auto;
 }
 
-.our-team{
+.our-team {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -164,11 +170,11 @@
     background-color: #270434;
     transition: 250ms;
 }
-.our-team:hover{
+.our-team:hover {
     background-color: #360ec8;
     text-decoration: underline gold;
 }
-.customer-support{
+.customer-support {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -178,7 +184,7 @@
     background-color: #270434;
     transition: 250ms;
 }
-.customer-support:hover{
+.customer-support:hover {
     background-color: #360ec8;
     text-decoration: underline gold;
 }

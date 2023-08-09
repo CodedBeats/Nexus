@@ -1,6 +1,6 @@
 import { getDoc, doc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
-import { db, auth } from "../misc/firebaseConfig.js";
+import { db, auth } from "../firebase/misc/firebaseConfig.js";
 
 
 async function loadProfile() {
@@ -16,15 +16,14 @@ async function loadProfile() {
             if (profileSnapshot.exists()) {
                 // Get the user's profile data
                 const profileData = profileSnapshot.data();
-                console.log(profileData.accountName, profileData.email);
+                console.log(profileData.email, profileData.username, profileData.password);
 
                 // Update the profile page HTML elements with the user's information
-                document.getElementById("field1").textContent = profileData.accountName;
-                document.getElementById("field2").textContent = profileData.email;
+                document.getElementById("email").textContent = profileData.email;
+                document.getElementById("username").textContent = profileData.username;
+                document.getElementById("password").textContent = profileData.password;
                 // Add more fields as needed
 
-                // Show the profile page ig the original profile display = "none"
-                // document.getElementById("profilePage").style.display = "block";
             } else {
                 console.log("User profile not found");
             }
@@ -42,10 +41,16 @@ async function loadProfile() {
 // Listen for changes in authentication state
 onAuthStateChanged(auth, (user) => {
     if (user) {
+        // diaply loading page
+        const loadingPage = document.getElementById("loading-container")
+
         console.log("User is signed in:", user);
 
-        // Call the function to load the profile when the page loads
+        // load the profile
         loadProfile()
+
+        // hide loading page after data load
+        loadingPage.style.display = "none"
 
     } else {
         // User is signed out

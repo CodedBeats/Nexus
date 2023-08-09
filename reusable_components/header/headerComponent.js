@@ -2,27 +2,33 @@
 let createHeaderComponent = () => {
     let headerComponentHTML = `
     <div class="header">
-        <div class="left-container">
-            <div id="navbarToggleIcon" class="navbarIcon"><button onclick="toggleNav()" type="button"><i class="fa fa-bars fa-3x"></i></button></div>
+        <div class="logo">
+            <a href="../home_page/homepage.html">
+                <img src="../../images/logo/logo.png" alt="logo">
+            </a>
         </div>
-        <div class="middle-container">
-            <div class="search-container">
-                <form class="search-form">
-                    <input
-                        type="text"
-                        placeholder="Search"
-                        class="search-input"
-                    />
-                    <button type="submit">
-                        <i class="fa fa-search fa-lg"></i>
-                    </button>
-                </form>
-            </div>
+        <div class="search-container">
+            <form class="search-form">
+                <input
+                    type="text"
+                    placeholder="Search"
+                    class="search-input"
+                />
+                <button type="submit">
+                    <i class="fa fa-search fa-lg"></i>
+                </button>
+            </form>
         </div>
-        <div class="right-container">
-            <div class="profile">
-                <a href="../user_page/userpage-profile.html"><i class="fa fa-user-circle-o fa-3x"></i></a>
-            </div>
+        <div class="profile">
+            <a href="../signup/signup.html" id="signup-btn">
+                <button class="login-btn">Signup</button>
+            </a>
+            <a href="../login/login.html" id="login-btn">
+                <button class="signup-btn">Login</button>
+            </a>
+            <a href="../user_page/userpage-profile.html" id="user-btn" class="user-icon" style="display: none;">
+                <i class="fa fa-user-circle-o fa-3x"></i>
+            </a>
         </div>
     </div>
     `;

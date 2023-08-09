@@ -2,21 +2,34 @@
 <html>
     <head>
         <title>About page</title>
+        <!-- about page styles -->
         <link rel="stylesheet" type="text/css" href="aboutpage.css"/>
+
+        <!-- component styles -->
         <link rel="stylesheet" type="text/css" href="../reusable_components/navbar/navbar.css" />
         <link rel="stylesheet" type="text/css" href="../reusable_components/header/header.css" />
+        <link rel="stylesheet" type="text/css" href="../reusable_components/loading/loading.css" />
+        <link rel="stylesheet" type="text/css" href="../reusable_components/footer/footer.css" />
+        <script type="module" src="../reusable_components/header/loginStatus.js"></script>
+        <link rel="stylesheet" type="text/css" href="../DOM/scrollbar.css" />
+
+        <!-- load icons -->
+        <script src="https://kit.fontawesome.com/a535b5a3c6.js" crossorigin="anonymous"></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
 
-        <!-- load icons -->
-        <script src="https://kit.fontawesome.com/a535b5a3c6.js" crossorigin="anonymous"></script>
+        <!-- load scripts -->
+        <script src="../DOM/activeLinks.js"></script>
     </head>
     <body>
+        <!-- reusable components -->
         <div id="navbar-container"></div>
         <div id="header-container"></div>
-        <div class="about-box">
+        <div id="loading-container"></div>
+
             <section>
                 <h2>NEXUS</h2>
                 <div class="nexus-container">
@@ -66,11 +79,11 @@
                         <div class="social-links">
                             <h3>Social</h3>
                             <div class="image-grid">
-                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="images/linkedin.png" alt="Linkedin"></a>
-                                <a href="https://discord.com/"><img class="links" src="images/discord.png" alt="Discord"></a>
-                                <a href="https://www.facebook.com/"><img class="links" src="images/facebook.png" alt="Facebook"></a>
-                                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img class="links" src="images/twitter.png" alt="Twitter"></a>
-                                <a href="https://ait.edu.au/"><img class="linksLast" src="images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
+                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="../images/linkedin.png" alt="Linkedin"></a>
+                                <a href="https://discord.com/"><img class="links" src="../images/discord.png" alt="Discord"></a>
+                                <a href="https://www.facebook.com/"><img class="links" src="../images/facebook.png" alt="Facebook"></a>
+                                <a href="https://github.com/"><img class="github-link" src="../images/GitHub-logo.png" alt="Github"></a>
+                                <a href="https://ait.edu.au/"><img class="linksLast" src="../images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
                             </div>
                         </div>
                     </div>
@@ -87,11 +100,11 @@
                         <div class="social-links">
                             <h3>Social</h3>
                             <div class="image-grid">
-                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="images/linkedin.png" alt="Linkedin"></a>
-                                <a href="https://discord.com/"><img class="links" src="images/discord.png" alt="Discord"></a>
-                                <a href="https://www.facebook.com/"><img class="links" src="images/facebook.png" alt="Facebook"></a>
-                                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img class="links" src="images/twitter.png" alt="Twitter"></a>
-                                <a href="https://ait.edu.au/"><img class="linksLast" src="images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
+                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="../images/linkedin.png" alt="Linkedin"></a>
+                                <a href="https://discord.com/"><img class="links" src="../images/discord.png" alt="Discord"></a>
+                                <a href="https://www.facebook.com/"><img class="links" src="../images/facebook.png" alt="Facebook"></a>
+                                <a href="https://github.com/"><img class="github-link" src="../images/GitHub-logo.png" alt="Github"></a>
+                                <a href="https://ait.edu.au/"><img class="linksLast" src="../images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
                             </div>
                         </div>
                     </div>
@@ -108,40 +121,23 @@
                         <div class="social-links">
                             <h3>Social</h3>
                             <div class="image-grid">
-                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="images/linkedin.png" alt="Linkedin"></a>
-                                <a href="https://discord.com/"><img class="links" src="images/discord.png" alt="Discord"></a>
-                                <a href="https://www.facebook.com/"><img class="links" src="images/facebook.png" alt="Facebook"></a>
-                                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img class="links" src="images/twitter.png" alt="Twitter"></a>
-                                <a href="https://ait.edu.au/"><img class="linksLast" src="images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
+                                <a href="https://au.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img class="links" src="../images/linkedin.png" alt="Linkedin"></a>
+                                <a href="https://discord.com/"><img class="links" src="../images/discord.png" alt="Discord"></a>
+                                <a href="https://www.facebook.com/"><img class="links" src="../images/facebook.png" alt="Facebook"></a>
+                                <a href="https://github.com/"><img class="github-link" src="../images/GitHub-logo.png" alt="Github"></a>
+                                <a href="https://ait.edu.au/"><img class="linksLast" src="../images/AIT.png" alt="AIT (Academy of Interactive Technology)"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Important Links</h2>
-                <div class="about-container">
-                    <a href="https://github.com/">
-                        <div class="git-link">
-                            <h3>Git - Repository</h3>
-                        </div>
-                    </a>
-                    <a href="https://ait.instructure.com/groups/2178">
-                        <div class="our-team">
-                            <h3>Our Team</h3>
-                            
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="customer-support">
-                            <h3>Support</h3>
-    
-                        </div>
-                    </a>
-                </div>
-            </section>
         </div>
+
+        <div id="footer-container"></div>
+        
         <script src="../reusable_components/navbar/navbarComponent.js"></script>
         <script src="../reusable_components/header/headerComponent.js"></script>
+        <script src="../reusable_components/loading/loadingComponent.js"></script>
+        <script src="../reusable_components/footer/footerComponent.js"></script>
     </body>
 </html>
