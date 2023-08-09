@@ -111,6 +111,12 @@
     background-color: #202020;
 }
 
+.user-box h3 {
+    margin: 10px 0px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .profile-data-form label {
     padding-left: 20px;
     font-size: 1.5em;
@@ -121,7 +127,6 @@
 .divided-user-box-profileinfo .form-title {
     font-size: 2em;
     font-weight: bold;
-    padding-left: 20px;
     color: #FF6F61;
     text-align: center;
 }
@@ -246,15 +251,6 @@
     border-radius: 6px;
 }
 .user-box-games-indi2 .delete-game-btn:hover {
-    background-color: #590000;
-}
-
-/* logout btn */
-#logout-btn {
-    background-color: #b80000;
-    border: none;
-}
-#logout-btn:hover {
     background-color: #590000;
 }
 

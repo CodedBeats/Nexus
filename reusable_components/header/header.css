@@ -130,3 +130,18 @@ body {
 .user-icon {
     color: white;
 }
+
+/* logout btn */
+#logout-btn button {
+    background-color: #b80000;
+    border: none;
+    height: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 24px; 
+}
+#logout-btn button:hover {
+    background-color: #590000;
+    cursor: pointer;
+}
