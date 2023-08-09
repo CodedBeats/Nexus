@@ -24,7 +24,7 @@
 }
   
 .game-card {
-    width: 110px;
+    width: 175px;
     margin: 10px;
     padding: 10px;
     border: 2px solid #000000;
@@ -58,6 +58,11 @@
 }
   
 .game-popularity {
+    margin-top: 5px;
+    color: #888;
+}
+
+.game-creator {
     margin-top: 5px;
     color: #888;
     align-self: flex-end;

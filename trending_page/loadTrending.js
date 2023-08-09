@@ -26,13 +26,18 @@ function renderGameCard(game) {
     gamePopularity.textContent = `Popularity: ${game.popularity}`;
     gameCard.appendChild(gamePopularity);
   
+    const gameCreator = document.createElement("div");
+    gameCreator.classList.add("game-creator");
+    gameCreator.textContent = `Created By: ${game.createdBy}`;
+    gameCard.appendChild(gameCreator);
+  
     return gameCard;
 }
 
 // Function to load trending games from db
 async function loadTrendingGames() {
     const trendingGamesContainer = document.getElementById("gameContainer");
-    const threshold = 2; // load games >= threshold
+    const threshold = 1; // load games >= threshold
 
     const trendingGames = await fetchTrendingGames(threshold);
     trendingGames.forEach((game) => {
