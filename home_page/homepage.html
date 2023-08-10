@@ -23,7 +23,9 @@
         <link rel="icon" type="image/x-icon" href="../images/logo/favicon.png">
 
         <!-- load scripts -->
+        <script type="module" src="./loadNewGames.js"></script>
         <script src="../DOM/activeLinks.js"></script>
+        <script src="../DOM/linkPage.js"></script>
     </head>
     <body>
         <!-- reusable components -->
@@ -31,83 +33,54 @@
         <div id="header-container"></div>
         <div id="loading-container"></div>
 
-        <div class="home-box">
-            <div class="list-container">
-                <div class="list-item">
-                    <h1>H1</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H2</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H3</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H4</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H5</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H6</h1>
-                    <p>Game information</p>
-                </div>
+        <div class="home-container">
+            <p class="new-games-title">New Games</p>
+            <div class="new-games-container" id="new-games-container">
+                <!-- New games dynamically loaded here -->
             </div>
-            <div class="list-container">
-                <div class="list-item">
-                    <h1>H1</h1>
-                    <p>Game information</p>
+
+            <!-- popular categories -->
+            <p class="categories-title">Popular Categories</p>
+            <div class="categories">
+                <div class="category-icon" onclick="redirectToPage('../trending_page/trendingpage.html')">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H2</h1>
-                    <p>Game information</p>
+                <div class="category-icon" onclick="redirectToPage('../trending_page/trendingpage.html')">
+                    <i class="fa-solid fa-dice-five"></i>
+                    <p class="category-name">Stratergy</p>
                 </div>
-                <div class="list-item">
-                    <h1>H3</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H4</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H5</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H6</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-            </div>
-            <div class="list-container">
-                <div class="list-item">
-                    <h1>H1</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H2</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H3</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
-                <div class="list-item">
-                    <h1>H4</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H5</h1>
-                    <p>Game information</p>
-                </div>
-                <div class="list-item">
-                    <h1>H6</h1>
-                    <p>Game information</p>
+                <div class="category-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <p class="category-name">Puzzle</p>
                 </div>
             </div>
         </div>
