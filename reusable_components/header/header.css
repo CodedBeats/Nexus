@@ -133,15 +133,18 @@ body {
 
 /* logout btn */
 #logout-btn button {
-    background-color: #b80000;
+    background-color: #7E3EFF;
+    color: #FFFFFF;
     border: none;
     height: 100%;
+    padding: 12px 20px;
     border-radius: 6px;
-    color: white;
-    font-size: 20px;
-    padding: 10px 24px; 
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 #logout-btn button:hover {
-    background-color: #590000;
-    cursor: pointer;
+    background-color: #5e24b4;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
