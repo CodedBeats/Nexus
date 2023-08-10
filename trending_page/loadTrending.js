@@ -21,15 +21,15 @@ function renderGameCard(game) {
     gameTitle.textContent = game.name;
     gameCard.appendChild(gameTitle);
   
-    const gamePopularity = document.createElement("div");
-    gamePopularity.classList.add("game-popularity");
-    gamePopularity.textContent = `Popularity: ${game.popularity}`;
-    gameCard.appendChild(gamePopularity);
-  
     const gameCreator = document.createElement("div");
     gameCreator.classList.add("game-creator");
     gameCreator.textContent = `Created By: ${game.createdBy}`;
     gameCard.appendChild(gameCreator);
+  
+    const gamePopularity = document.createElement("div");
+    gamePopularity.classList.add("game-popularity");
+    gamePopularity.textContent = `Popularity: ${game.popularity}`;
+    gameCard.appendChild(gamePopularity);
   
     return gameCard;
 }
