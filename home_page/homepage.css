@@ -124,4 +124,7 @@
     color: #5e24b4;
     padding: 5px 0px;
 }
+.category-icon:hover i {
+    color: #491596;
+}
   
