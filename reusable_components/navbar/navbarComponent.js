@@ -42,6 +42,54 @@ let createNavbarComponent = () => {
                     <div class="nav-categories-name">Stratergy</div>
                 </div>
             </a>
+            <a href="#">
+                <div class="nav-link">
+                <i class="fa-regular fa-chess-rook"></i>
+                    <div class="nav-categories-name">Tower<br>Defense</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-atom"></i>
+                    <div class="nav-categories-name">Sci-Fi</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-rocket"></i>
+                    <div class="nav-categories-name">Space</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    <div class="nav-categories-name">Racing</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <div class="nav-categories-name">Farming</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-question"></i>
+                    <div class="nav-categories-name">Trivia</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-baseball"></i>
+                    <div class="nav-categories-name">Sport</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-link">
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <div class="nav-categories-name">Pirate</div>
+                </div>
+            </a>
         </div>
     </div>
     `;
