@@ -1,4 +1,4 @@
-const canvas = document.getElementById("snake-board")
+const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // class for the segments of the snake and it's constructor
@@ -10,10 +10,14 @@ class snakeSegment{
 }
 
 // Game variables
-let speed = 5;
+// let speed = 5;
+let speed = 10;
 
 let tileCount = 30;
 let tileSize = canvas.width / tileCount - 5;
+
+let canvasHeight = canvas.height / tileCount
+let canvasWidth = canvas.width / tileCount
 
 let snakeHeadX = 10;
 let snakeHeadY = 10;
@@ -31,12 +35,12 @@ let score = 0;
 let rank = '';
 
 // Audio variables
-const point = new Audio("smb_coin.wav");
-const rankUp = new Audio("smb_stage_clear.wav");
-const collideWithSelf = new Audio("smb_mariodie.wav");
-const collideWithWall = new Audio("smb_gameover.wav");
-const closeToWinning = new Audio("smb_warning.wav");
-const Win = new Audio("smb_world_clear.wav");
+const point = new Audio("../games/snake/smb_coin.wav");
+const rankUp = new Audio("../games/snake/smb_stage_clear.wav");
+const collideWithSelf = new Audio("../games/snake/smb_mariodie.wav");
+const collideWithWall = new Audio("../games/snake/smb_gameover.wav");
+const closeToWinning = new Audio("../games/snake/smb_warning.wav");
+const Win = new Audio("../games/snake/smb_world_clear.wav");
 
 // functions for calling the senquence of all other functions
 function game(){
@@ -45,6 +49,7 @@ function game(){
     if(result == true){
         return;
     }
+    console.log(snakeHeadX, snakeHeadY)
 
     clearBoard();
     checkFoodCollision();
@@ -73,7 +78,7 @@ function isGameOver(){
         collideWithWall.play();
         gameOver = true;
     }
-    else if(snakeHeadX == tileCount || snakeHeadY == tileCount){
+    else if(snakeHeadX == Math.floor(canvasWidth) || snakeHeadY == Math.floor(canvasHeight)){
         collideWithWall.play();
         gameOver = true;
     }

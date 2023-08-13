@@ -1,11 +1,5 @@
-.screen{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-#snake-board {
-    border: 2px solid black;
+#gameCanvas {
+    margin: 10px;
+    position: fixed;
+    border: 2px solid red;
 }

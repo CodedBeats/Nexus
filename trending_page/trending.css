@@ -28,9 +28,11 @@
     margin: 10px;
     padding: 10px;
     border: 2px solid #000000;
+    color: white;
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 .game-card:hover {
     border-color: #5e24b4;

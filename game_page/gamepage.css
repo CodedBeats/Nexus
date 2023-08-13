@@ -1,0 +1,11 @@
+.gamepage-container {
+    background-color: #000000;
+    color: white;
+    min-height: 84vh;
+}
+
+#gameCanvas {
+    margin: 10px;
+    /* position: fixed; */
+    border: 2px solid red;
+}

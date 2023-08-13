@@ -4,8 +4,9 @@ import { fetchTrendingGames } from "./fetchTrendingGames.js";
 function renderGameCard(game) {
     console.log(game.imageUrl, game.title, game.popularity)
 
-    const gameCard = document.createElement("div");
+    const gameCard = document.createElement("a");
     gameCard.classList.add("game-card");
+    gameCard.href = `../game_page/gamepage.html?gameId=${game.name}`
 
     const gameImgContainer = document.createElement("div");
     gameImgContainer.classList.add("game-image-container");
