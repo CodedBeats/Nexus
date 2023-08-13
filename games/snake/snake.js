@@ -163,8 +163,8 @@ function clearBoard(){
 // chechs if snakes has collided with and update length & score accordingly
 function checkFoodCollision(){
     if (foodX == snakeHeadX && foodY == snakeHeadY){
-        foodX = Math.floor(Math.random() * tileCount);
-        foodY = Math.floor(Math.random() * tileCount);
+        foodX = Math.floor(Math.random() * canvasWidth);
+        foodY = Math.floor(Math.random() * canvasHeight);
         snakeLength ++;
         score ++;
         point.play();
@@ -174,7 +174,7 @@ function checkFoodCollision(){
 // creates and randomises the placement of food
 function drawfood(){
     ctx.fillStyle = "#7851a9";
-    ctx.fillRect(foodX*tileCount, foodY*tileCount, tileSize, tileSize)
+    ctx.fillRect(foodX*tileCount, foodY*tileCount, tileCount - 5, tileCount - 5)
 }
 
 // draws the snake sprite and updates length
