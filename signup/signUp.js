@@ -4,7 +4,7 @@ import { setDoc, doc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-f
 import { auth, db } from "../firebase/misc/firebaseConfig.js";
 
 // Function to handle user sign-up
-async function signUp(email, password, username) {
+async function signUp(email, password, username, pfp) {
     try {
         // Create a new user using Firebase Authentication
         const userCredential = await createUserWithEmailAndPassword(
@@ -20,11 +20,12 @@ async function signUp(email, password, username) {
             email: user.email,
             password: password,
             username: username,
+            pfp: "../images/profile-pic/profile_pic1.png"
         };
         await setDoc(userRef, userData);
 
         console.log("User account created successfully!");
-        console.log(user.email, password, username);
+        console.log(user.email, password, username, pfp);
 
         // link to home
         window.location.href = "../home_page/homepage.html";
