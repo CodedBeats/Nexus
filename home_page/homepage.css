@@ -83,13 +83,12 @@
     row-gap: 25px;
     margin-left: 5vw;
     margin-right: 5vw;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .categories-title {
     color: white;
     padding-top: 10vh;
     padding-bottom: 5px;
-    padding-left: 20px;
     margin: 0;
     margin-left: 5vw;
     font-size: 2em;
