@@ -10,6 +10,12 @@
     border: 2px solid red;
 }
 
+/* restart btn */
+#restart-game {
+    margin-left: 1000px;
+    margin-top: 200px;
+}
+
 /* wonk in progress */
 .wip {
     position: fixed;

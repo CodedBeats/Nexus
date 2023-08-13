@@ -335,3 +335,53 @@ function KeyPressedDown(event){
 
 // runs Game
 game();
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Get a reference to the reset button
+const resetButton = document.getElementById("restart-game");
+
+// Attach a click event listener to the reset button
+resetButton.addEventListener("click", resetGame);
+
+// Flag to track if the game is running
+let isGameRunning = false;
+
+// Function to reset the game
+function resetGame() {
+    if (isGameRunning) {
+        return; // Don't reset if the game is already running
+    }
+
+    // Set the flag to indicate the game is running
+    isGameRunning = true;
+
+    // Reset all game variables to their initial values
+    speed = 5;
+    tileCount = 30;
+    tileSize = canvas.width / tileCount - 5;
+    // ... Reset other variables ...
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Reset the snake position and other game-related variables
+    snakeHeadX = 10;
+    snakeHeadY = 10;
+    snakeSegments.length = 0;
+    snakeLength = 2;
+    foodX = 5;
+    foodY = 5;
+    xVelocity = 0;
+    yVelocity = 0;
+    score = 0;
+    rank = '';
+
+    // Call the game function to start a new game
+    game();
+
+    // Reset the flag after a short delay to allow the game to start
+    setTimeout(() => {
+        isGameRunning = false;
+    }, 100);
+} 
