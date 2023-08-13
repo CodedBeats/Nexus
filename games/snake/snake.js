@@ -10,8 +10,7 @@ class snakeSegment{
 }
 
 // Game variables
-// let speed = 5;
-let speed = 10;
+let speed = 5;
 
 let tileCount = 30;
 let tileSize = canvas.width / tileCount - 5;
@@ -49,7 +48,7 @@ function game(){
     if(result == true){
         return;
     }
-    console.log(snakeHeadX, snakeHeadY)
+    // console.log(snakeHeadX, snakeHeadY)
 
     clearBoard();
     checkFoodCollision();
