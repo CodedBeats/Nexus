@@ -63,9 +63,6 @@ function deleteAccount() {
             })
             .catch((error) => {
                 // Re-authentication failed, handle the error
-                alert(
-                    "Password re-authentication failed. Please make sure you entered the correct password."
-                );
                 console.error(error);
             });
 
