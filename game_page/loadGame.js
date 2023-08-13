@@ -17,9 +17,13 @@ else if (gameId === "pong") {
 // game not available yet
 else {
     const canvas = document.getElementById('gameCanvas');
+    const restartBtn = document.getElementById("restart-game")
     console.log("WIP");
     loadWip();
+
+    // hide game content
     canvas.style.display = "none";
+    restartBtn.style.display = "none";
 }
 
 // load apropriate game and set canvas width and height
