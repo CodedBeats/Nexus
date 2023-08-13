@@ -16,7 +16,7 @@ async function handleLogin() {
         await signInWithEmailAndPassword(auth, email, password);
 
         // Redirect the user to a page
-        window.location.href = "../../../user_page/userpage-profile.html";
+        window.location.href = "../home_page/homepage.html";
     } catch (error) {
         errorMessage.textContent = error.message;
     }
