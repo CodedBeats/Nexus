@@ -12,7 +12,6 @@
         <script type="module" src="../reusable_components/header/loginStatus.js"></script>
         <script type="module" src="../reusable_components/header/logout.js"></script>
         <link rel="stylesheet" type="text/css" href="../reusable_components/loading/loading.css" />
-        <link rel="stylesheet" type="text/css" href="../reusable_components/footer/footer.css" />
         <link rel="stylesheet" type="text/css" href="../DOM/scrollbar.css" />
 
         <!-- load icons -->
@@ -36,14 +35,18 @@
 
         <div class="gamepage-container">
             <canvas id="gameCanvas"></canvas>
-        </div>
 
-        <div id="footer-container"></div>
+            <div id="wip" class="wip">
+                <div class="wip-content">
+                    <h2>Work in Progress</h2>
+                    <p>This game is currently under development.</p>
+                </div>
+            </div>
+        </div>
         
         <script src="../reusable_components/navbar/navbarComponent.js"></script>
         <script src="../reusable_components/header/headerComponent.js"></script>
         <script src="../reusable_components/loading/loadingComponent.js"></script>
-        <script src="../reusable_components/footer/footerComponent.js"></script>
         <script id="gameScript"></script>
         <script src="./loadGame.js"></script>
     </body>
