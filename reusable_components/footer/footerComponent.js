@@ -2,7 +2,8 @@
 let createFooterComponent = () => {
     let footerComponentHTML = `
     <div class="footer">
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p>Nexus - Team 4. All rights reserved.</p>
+        <button id="back-to-top-button">Back to Top</button>
     </div>
     `;
 
