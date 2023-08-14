@@ -90,10 +90,14 @@ function isGameOver(){
         }
     }
     if (score == 150){
+        updateHighScore();
         Win.play();
         gameOver = true;
     }
     if (gameOver == true){
+        // update high score after game ends
+        updateHighScore();
+
         ctx.fillStyle = "#ffffff";
         ctx.font = "bold 100px Arial"
         ctx.fillText("Game Over!", canvas.width / 6, canvas.height / 1.9)
@@ -338,12 +342,6 @@ game();
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Get a reference to the reset button
-const resetButton = document.getElementById("restart-game");
-
-// Attach a click event listener to the reset button
-resetButton.addEventListener("click", resetGame);
-
 // Flag to track if the game is running
 let isGameRunning = false;
 
@@ -352,6 +350,10 @@ function resetGame() {
     if (isGameRunning) {
         return; // Don't reset if the game is already running
     }
+
+    // get update session highscore
+    const highscoreText = document.getElementById("session-highscore");
+    highscoreText.textContent = "";
 
     // Set the flag to indicate the game is running
     isGameRunning = true;
@@ -384,4 +386,17 @@ function resetGame() {
     setTimeout(() => {
         isGameRunning = false;
     }, 100);
-} 
+}
+
+function updateHighScore() {
+    // get score element
+    const highscoreText = document.getElementById("session-highscore");
+
+    // update score
+    highscoreText.textContent = score;
+    
+}
+
+// add functionality to restart btn
+const resetButton = document.getElementById("restart-game");
+resetButton.addEventListener("click", resetGame);

@@ -16,6 +16,15 @@
     margin-top: 200px;
 }
 
+/* game info */
+.session-highscore {
+    display: none;
+    margin-left: 1000px;
+}
+.highscore {
+    margin-left: 1000px;
+}
+
 /* wonk in progress */
 .wip {
     position: fixed;
