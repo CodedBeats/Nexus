@@ -16,12 +16,16 @@ if (gameId === "snake") {
 else {
     const canvas = document.getElementById('gameCanvas');
     const restartBtn = document.getElementById("restart-game")
+    const canvasContainer = document.getElementById("canvas-container")
+    const gameDataContainer = document.getElementById("game-info-container")
     console.log("WIP");
     loadWip();
 
     // hide game content
     canvas.style.display = "none";
     restartBtn.style.display = "none";
+    canvasContainer.style.display = "none";
+    gameDataContainer.style.display = "none";
 }
 
 // load apropriate game and set canvas width and height

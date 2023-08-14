@@ -35,14 +35,45 @@
         <div id="loading-container"></div>
 
         <div class="gamepage-container">
-            <canvas id="gameCanvas"></canvas>
-
-            <!-- restart -->
-            <button id="restart-game">Reset Game</button>
+            <div id="canvas-container" class="canvas-container">
+                <canvas id="gameCanvas"></canvas>
+            </div>
 
             <!-- game info -->
-            <p class="session-highscore">Session Highscore: <span id="session-highscore"></span></p>
-            <p class="highscore">Best Highscore: <span id="highscore"></span></p>
+            <div id="game-info-container" class="game-info-container">
+                <div class="game-info">
+                    <div class="game-data">
+                        <h2><span id="game-name"></span></h2>
+                        <div class="data-container">
+                            <div class="data-label">Popularity: </div> 
+                            <span id="popularity" class="data-value"></span>
+                        </div>
+                        <div class="data-container">
+                            <div class="data-label">Developer: </div> 
+                            <span id="developer" class="data-value"></span>
+                        </div>
+                        <div class="data-container">
+                            <div class="data-label">Released: </div> 
+                            <span id="released" class="data-value"></span>
+                        </div>
+                        <div class="data-container">
+                            <div class="data-label">Highscore: </div> 
+                            <span id="highscore" class="data-value"></span>
+                        </div>
+                        <div class="data-container">
+                            <div class="data-label">Category: </div> 
+                            <span id="category" class="data-value"></span>
+                        </div>
+                        
+                        <!-- restart -->
+                        <button id="restart-game">Restart Game</button>
+                    </div>
+                    <div class="game-text">
+                        <span id="about" class="about"></span>
+                        <span id="how-to-play" class="xx"></span>
+                    </div>
+                </div>
+            </div>
             
             <!-- work in progress overlay -->
             <div id="wip" class="wip">
@@ -52,6 +83,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- sneaky hidden js -->
+        <p class="session-highscore">Session Highscore: <span id="session-highscore"></span></p>
         
         <script src="../reusable_components/navbar/navbarComponent.js"></script>
         <script src="../reusable_components/header/headerComponent.js"></script>

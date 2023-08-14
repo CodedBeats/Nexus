@@ -75,6 +75,10 @@ async function updateHighscore(score) {
 
     // check if score is better than highscore
     if (newValue > currentValue) {
+        // set highscore text field to new value (so don't need to reload page)
+        const highscoreTextField = document.getElementById("highscore");
+        highscoreTextField.textContent = newValue;
+
         // update highscore
         const data = { [fieldName]: newValue };
 
@@ -90,10 +94,9 @@ async function updateHighscore(score) {
     }
 }
 
-let highscoreText;
-
 // Callback function to execute when a mutation is observed
 const mutationCallback = (mutationsList, observer) => {
+    let highscoreText = document.getElementById('session-highscore');
     for (const mutation of mutationsList) {
         if (mutation.type === 'childList' && mutation.target === highscoreText) {
             // The text content of the target element has changed
@@ -105,7 +108,7 @@ const mutationCallback = (mutationsList, observer) => {
 };
 
 function getHighscoreChange() {
-    highscoreText = document.getElementById('session-highscore');
+    let highscoreText = document.getElementById('session-highscore');
 
     // Create a new MutationObserver instance with the mutationCallback
     const observer = new MutationObserver(mutationCallback);
@@ -117,8 +120,12 @@ function getHighscoreChange() {
     // To disconnect the observer later:
     // observer.disconnect();
 }
+// ============================== //
 
-async function loadHighscore() {
+
+
+// === Game Data === //
+async function loadGameData() {
     try {
         const collectionName = "games"; // Replace with your collection name
         const docId = await getDocID(collectionName);
@@ -130,12 +137,45 @@ async function loadHighscore() {
             // Fetch the document data
             const docSnapshot = await getDoc(docRef);
             
-            // Get the highscore field value
-            const highscoreValue = docSnapshot.data().highscore;
+
+            // Get the doc data
+            const name = docSnapshot.data().name
+            // capitalize first letter
+            const gameName = name.charAt(0).toUpperCase() + name.slice(1);
+            const gamePopularity = docSnapshot.data().popularity;
+            const gameDeveloper = docSnapshot.data().createdBy;
+            const timestamp = new Date(docSnapshot.data().createdAt.seconds * 1000); // Convert to milliseconds
+            // get readable time haha
+            const gameReleased = timestamp.toLocaleDateString();
+            const gameHighscore = docSnapshot.data().highscore;
+            const category = docSnapshot.data().category;
+            const gameCategory = category.charAt(0).toUpperCase() + category.slice(1);
+
+            const gameObjective = docSnapshot.data().howToPlay;
+            const gameAbout = docSnapshot.data().about;
             
-            // Update the text element
+
+            // get text fields
+            const gameNameTextElement = document.getElementById("game-name");
+            const popularityTextElement = document.getElementById("popularity");
+            const developerTextElement = document.getElementById("developer");
+            const releasedTextElement = document.getElementById("released");
             const highscoreTextElement = document.getElementById("highscore");
-            highscoreTextElement.textContent = highscoreValue;
+            const categoryTextElement = document.getElementById("category");
+            const objectiveTextElement = document.getElementById("how-to-play");
+            const aboutTextElement = document.getElementById("about");
+
+
+            // load data into text fields
+            gameNameTextElement.textContent = gameName;
+            popularityTextElement.textContent = gamePopularity;
+            developerTextElement.textContent = gameDeveloper;
+            releasedTextElement.textContent = gameReleased;
+            highscoreTextElement.textContent = gameHighscore;
+            categoryTextElement.textContent = gameCategory;
+            objectiveTextElement.textContent = gameObjective
+            aboutTextElement.textContent = gameAbout
+
         } else {
             console.log("No matching document found.");
         }
@@ -150,5 +190,5 @@ async function loadHighscore() {
 document.addEventListener("DOMContentLoaded", () => {
     updatePopularity();
     getHighscoreChange();
-    loadHighscore();
+    loadGameData();
 });
