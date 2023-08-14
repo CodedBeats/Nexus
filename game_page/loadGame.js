@@ -7,11 +7,9 @@ const scriptElement = document.createElement("script");
 
 // Set the source of the script based on the selected game
 if (gameId === "snake") {
+    console.log("Snake game")
     loadGame("../games/snake/snake.js", "../games/snake/snake.css", 900, 600);
 } 
-else if (gameId === "pong") {
-    console.log("pong game")
-}
 // Add more conditions for other games if needed
 
 // game not available yet
