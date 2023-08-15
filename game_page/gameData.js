@@ -139,18 +139,14 @@ async function loadGameData() {
             
 
             // Get the doc data
-            const name = docSnapshot.data().name
-            // capitalize first letter
-            const gameName = name.charAt(0).toUpperCase() + name.slice(1);
+            const gameName = docSnapshot.data().name
             const gamePopularity = docSnapshot.data().popularity;
             const gameDeveloper = docSnapshot.data().createdBy;
             const timestamp = new Date(docSnapshot.data().createdAt.seconds * 1000); // Convert to milliseconds
             // get readable time haha
             const gameReleased = timestamp.toLocaleDateString();
             const gameHighscore = docSnapshot.data().highscore;
-            const category = docSnapshot.data().category;
-            const gameCategory = category.charAt(0).toUpperCase() + category.slice(1);
-
+            const gameCategory = docSnapshot.data().category;
             const gameObjective = docSnapshot.data().howToPlay;
             const gameAbout = docSnapshot.data().about;
             
