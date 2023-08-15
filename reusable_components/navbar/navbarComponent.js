@@ -27,12 +27,6 @@ let createNavbarComponent = () => {
                     <div class="nav-link-name">Categories</div>
                 </div>
             </a>
-            <a href="#">
-                <div class="nav-link">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <div class="nav-link-name">Random</div>
-                </div>
-            </a>
         </div>
         <hr class="nav-page-break" />
         <div class="nav-categories">
