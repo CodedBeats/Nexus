@@ -5,6 +5,11 @@ const gameId = urlParams.get("gameId");
 // Create a script element
 const scriptElement = document.createElement("script");
 
+// set page title to game name
+const pageTitle = document.getElementById("page-title");
+const gameName = gameId.charAt(0).toUpperCase() + gameId.slice(1);
+pageTitle.textContent = `${gameName} - Nexus`;
+
 // Set the source of the script based on the selected game
 if (gameId === "snake") {
     console.log("Snake game")
