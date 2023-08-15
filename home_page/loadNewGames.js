@@ -4,7 +4,7 @@ import { fetchNewGames } from "./fetchNewGames.js";
 function renderGameCard(game) {
     const gameCard = document.createElement("a");
     gameCard.classList.add("game-card");
-    gameCard.href = `../game_page/gamepage.html?gameId=${game.name}`
+    gameCard.href = `../game_page/gamepage.html?gameId=${game.name}`;
 
     const gameImgContainer = document.createElement("div");
     gameImgContainer.classList.add("game-image-container");
@@ -28,7 +28,11 @@ function renderGameCard(game) {
     const gameTimestamp = document.createElement("div");
     gameTimestamp.classList.add("game-timestamp");
     const timestamp = new Date(game.createdAt.seconds * 1000); // Convert to milliseconds
-    gameTimestamp.textContent = `Date: ${timestamp.toLocaleDateString()}`;
+    const options = { day: "numeric", month: "numeric", year: "numeric" };
+    gameTimestamp.textContent = `Released: ${timestamp.toLocaleDateString(
+        "en-AU",
+        options
+    )}`;
     gameCard.appendChild(gameTimestamp);
 
     return gameCard;
