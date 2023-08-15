@@ -58,7 +58,7 @@ function deleteAccount() {
                         });
                         
                     // link to home
-                    window.location.href = "../home_page/homepage.html";
+                    // window.location.href = "../home_page/homepage.html";
                 }
             })
             .catch((error) => {
