@@ -22,10 +22,10 @@ function renderGameCard(game) {
     gameTitle.textContent = game.name;
     gameCard.appendChild(gameTitle);
   
-    const gameCreator = document.createElement("div");
-    gameCreator.classList.add("game-creator");
-    gameCreator.textContent = `Created By: ${game.createdBy}`;
-    gameCard.appendChild(gameCreator);
+    const gameReleaseStatus = document.createElement("div");
+    gameReleaseStatus.classList.add("game-release-status");
+    gameReleaseStatus.textContent = `Status: ${game.releaseStatus}`;
+    gameCard.appendChild(gameReleaseStatus);
   
     const gamePopularity = document.createElement("div");
     gamePopularity.classList.add("game-popularity");
