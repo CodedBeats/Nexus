@@ -1,4 +1,3 @@
-// fetchCategoryGames.js
 import { collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 import { db } from "../firebase/misc/firebaseConfig.js";
 
