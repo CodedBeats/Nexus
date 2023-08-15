@@ -21,6 +21,12 @@ let createNavbarComponent = () => {
                     <div class="nav-link-name">Trending</div>
                 </div>
             </a>
+            <a href="../category_page/categoriespage.html" data-page="categoriespage">
+                <div class="nav-link">
+                    <i class="fa-solid fa-tags"></i>
+                    <div class="nav-link-name">Categories</div>
+                </div>
+            </a>
             <a href="#">
                 <div class="nav-link">
                     <i class="fa-solid fa-shuffle"></i>
