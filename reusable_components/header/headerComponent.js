@@ -13,8 +13,9 @@ let createHeaderComponent = () => {
                     type="text"
                     placeholder="Search"
                     class="search-input"
+                    id="searchInput"
                 />
-                <button type="submit">
+                <button type="submit" id="submit-search">
                     <i class="fa fa-search fa-lg"></i>
                 </button>
             </form>
@@ -32,6 +33,14 @@ let createHeaderComponent = () => {
             <a href="../user_page/userpage-profile.html" id="user-btn" class="user-icon" style="display: none;">
                 <i class="fa fa-user-circle-o fa-3x"></i>
             </a>
+        </div>
+    </div>
+    <div class="search-results" id="searchResults">
+        <div class="searched-games">
+            <button class="close-button" id="closeButton">x</button>
+            <ul class="results-list" id="resultsList">
+                <!-- Search results will be dynamically added here -->
+            </ul>
         </div>
     </div>
     `;
