@@ -14,8 +14,10 @@ if (gameId === "Snake") {
     console.log("Snake game")
     loadGame("../games/snake/snake.js", "../games/snake/snake.css", 900, 600);
 } 
-// Add more conditions for other games if needed
-
+else if (gameId === "Exo-Defense") {
+    console.log("Tower defense game")
+    loadGame("../games/tower_defense/index.js", "../games/tower_defense/style.css", 900, 600);
+}
 // game not available yet
 else {
     const canvas = document.getElementById('gameCanvas');
